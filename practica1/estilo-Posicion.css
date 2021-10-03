@@ -1,0 +1,48 @@
+
+   /**
+    header {
+        width: 980px;
+        display: block;
+    }
+    #superior{
+        width: 980px ;
+    }
+    div{
+        display: block;
+    }
+    nav {
+        display: block;
+    }
+    #container{
+        width: 980px;
+        display: block;
+    }
+
+    #navegacion{
+        height: 35PX;
+        display: block;
+       
+    }
+    nav ul{
+        width: 895.5px;
+    }
+    nav ul li {
+        float: left;
+    }
+
+    li.menuItem{
+    float: left;
+    display: list-item;
+
+    
+    }
+    #navegacionBotones{
+       
+        width: 895.5px;
+       }
+    #texto{
+        display: block;
+
+    }
+    
+*/

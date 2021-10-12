@@ -232,8 +232,9 @@ nav ul{
 
         grid-column: 1;
      
-        
+      /*  
         justify-self: center;
+        */
     }
 
     main section:nth-of-type(2) {

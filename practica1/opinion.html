@@ -61,28 +61,30 @@
 
     <main>
 
-        <h2>Danos tu opinion sobre Alan:</h2>
-
+        <h2>¡¡Danos tu opinion sobre Alan!!</h2>
         <section>
+            <h3>Formulario:</h3>
             <form>
-                <p><label>Nombre: <input></label></p>
-                <p><label>Telefono: <input type=tel></label></p>
-                <p><label>Correo: <input type=email></label></p>
+                <p><label for="nombre">Nombre:</label> <input id="nombre" type="text" /></p>
+                <p><label for="telefono">Telefono:</label> <input id="telefono" type="number" /></p>
+                <p><label for="correo">Correo:</label> <input id="correo" type="text" /></p>
+ 
                 <fieldset>
                  <legend> ¿Conocias a Alan? </legend>
-                 <p><label> <input type=radio name=size> No le conocia </label></p>
-                 <p><label> <input type=radio name=size> Conocia su nombre </label></p>
-                 <p><label> <input type=radio name=size> Soy un fanatico </label></p>
+                 <p> <input id="ra1" type=radio name=known /><label for="ra1">No le conocia </label></p>
+                 <p> <input id="ra2" type=radio name=known /><label for="ra2">Conocia su nombre</label></p>
+                 <p> <input id="ra3" type=radio name=known /><label for="ra3">Soy un fanatico </label></p>
                 </fieldset>
                 <fieldset>
                  <legend> Que conocias sobre el </legend>
-                 <p><label> <input type=checkbox> Dynabook </label></p>
-                 <p><label> <input type=checkbox> POO </label></p>
-                 <p><label> <input type=checkbox> Las GUI </label></p>
-                 <p><label> <input type=checkbox> Sus citas </label></p>
+                 <p> <input id="che1" type=checkbox name=conocimiento /><label for="che1">Dynabook </label></p>
+                 <p> <input id="che2" type=checkbox name=conocimiento /><label for="che2">POO </label></p>
+                 <p> <input id="che3" type=checkbox name=conocimiento /><label for="che3">Las GUI </label></p>
+                 <p> <input id="che4" type=checkbox name=conocimiento /><label for="che4">Sus citas </label></p>
                 </fieldset>
-                <p><label>Tu Opinion: <textarea></textarea></label></p>
-                <p><button>Enviar</button></p>
+                <p><label  for="opinion">Tu Opinion: </label><textarea id ="opinion" ></textarea></p>
+                <input type="submit" value="Enviar" >
+    
                </form>
       
         </section>

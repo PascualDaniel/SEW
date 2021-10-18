@@ -269,10 +269,12 @@ nav ul{
         border: 1px solid black;
 
     }
+    /* Especificidad -> (0,0,3) */
     main table th{
         background-color: #284B63;
         color: #FFFFFF;
     }
+    /* Especificidad -> (0,0,3) */
     main table td{
         background-color: #cddfeb;
         color: #000000;

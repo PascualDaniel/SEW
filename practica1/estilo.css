@@ -260,6 +260,11 @@ nav ul{
         width: 100%;
         height: auto;
     }
+    /* Especificidad -> (0,0,3) */
+    main section audio{
+        width: 80%;
+        height: auto;
+    }
     /* Especificidad -> (0,0,2) */ 
     main ul {
         list-style-type: square;

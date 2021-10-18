@@ -266,7 +266,7 @@ nav ul{
     }
      /* Especificidad -> (0,0,2) */
     main table, th,td{
-        border: 1px solid black;
+        border: 1px solid #353535;
 
     }
     /* Especificidad -> (0,0,3) */

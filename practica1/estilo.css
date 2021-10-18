@@ -263,7 +263,7 @@ nav ul{
     /* Especificidad -> (0,0,3) */
     main section audio{
         width: 80%;
-        height: auto;
+        height: 3em;
     }
     /* Especificidad -> (0,0,2) */ 
     main ul {

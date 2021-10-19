@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbol SYSTEM "arbol.dtd">
+	<arbol>
+		<persona>
+			<nombre>Daniel</nombre>
+			<apellidos>Pascual Lopez</apellidos>
+			<datosNacimiento>
+				<fechaNacimiento>14-07-2000</fechaNacimiento>
+				<lugarNacimiento>Arriondas</lugarNacimiento>
+				<coordenadasNacimiento>
+					<longitud>   -5.823948 </longitud>
+					<latitud>	43.382945 </latitud>
+					<altitud>	232	</altitud>
+				</coordenadasNacimiento>
+			</datosNacimiento>
+			<fotografias>
+				<foto>foto.jpg</foto>
+			</fotografias>
+			<videos>
+			</videos>
+			<comentarios> Soy estudiante en EII OVIEDO</comentarios>
+			<padres>
+				<persona>
+					<nombre>Dolores</nombre>
+					<apellidos>Lopez Rigueira</apellidos>
+					<datosNacimiento>
+						<fechaNacimiento>1-1-1980</fechaNacimiento>
+						<lugarNacimiento>Ferrol</lugarNacimiento>
+						<coordenadasNacimiento>
+							<longitud>   -8.823948 </longitud>
+							<latitud>	33.382945 </latitud>
+							<altitud>	252	</altitud>
+						</coordenadasNacimiento>
+					</datosNacimiento>
+					<fotografias>
+						<foto>fotodolo.jpg</foto>
+					</fotografias>
+					<videos>
+					</videos>
+					<comentarios> Hace muy bueno frixuelos</comentarios>
+				</persona>
+				<persona>
+				<nombre>J Manuek</nombre>
+					<apellidos>Pascual Vallina</apellidos>
+					<datosNacimiento>
+						<fechaNacimiento>2-2-1980</fechaNacimiento>
+						<lugarNacimiento>Villanueva</lugarNacimiento>
+						<coordenadasNacimiento>
+							<longitud>   -3.948 </longitud>
+							<latitud>	33.385545 </latitud>
+							<altitud>	452	</altitud>
+						</coordenadasNacimiento>
+					</datosNacimiento>
+					<fotografias>
+						<foto>fotopas.jpg</foto>
+					</fotografias>
+					<videos>
+					</videos>
+					<comentarios> Le gusta el monte</comentarios>
+				</persona>
+			</padres>
+		</persona>
+	</arbol>

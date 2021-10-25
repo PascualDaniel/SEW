@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arbol SYSTEM "arbol.dtd">
+<arbol>
+	<persona>
+		<nombre>Daniel</nombre>
+		<apellidos>Pascual Lopez</apellidos>
+		<datosNacimiento>
+			<fechaNacimiento>14-07-2000</fechaNacimiento>
+			<lugarNacimiento>Arriondas</lugarNacimiento>
+			<coordenadasNacimiento>
+				<longitud>   -5.823948 </longitud>
+				<latitud>	43.382945 </latitud>
+				<altitud>	232	</altitud>
+			</coordenadasNacimiento>
+		</datosNacimiento>
+		<fotografias>
+			<foto>fotoMia.jpg</foto>
+		</fotografias>
+		<videos>
+			</videos>
+		<comentarios> Soy estudiante en EII OVIEDO</comentarios>
+		<padres>
+			<persona>
+				<nombre>Dolores</nombre>
+				<apellidos>Lopez Rigueira</apellidos>
+				<datosNacimiento>
+					<fechaNacimiento>2-5-1965</fechaNacimiento>
+					<lugarNacimiento>Ferrol</lugarNacimiento>
+					<coordenadasNacimiento>
+						<longitud>    -8.22275 </longitud>
+						<latitud>	 43.4883 </latitud>
+						<altitud>	15	</altitud>
+					</coordenadasNacimiento>
+				</datosNacimiento>
+				<fotografias>
+					<foto>fotoMama.jpg</foto>
+				</fotografias>
+				<videos>
+					</videos>
+				<comentarios> Hace muy buenos frixuelos</comentarios>
+				<padres>
+					<persona>
+						<nombre>Dolores</nombre>
+						<apellidos>Rigueira Lagoa </apellidos>
+						<datosNacimiento>
+							<fechaNacimiento>4-8-1940</fechaNacimiento>
+							<lugarNacimiento>Monforte</lugarNacimiento>
+							<coordenadasNacimiento>
+								<longitud>   -7.4942300 </longitud>
+								<latitud>	42.5120100 </latitud>
+								<altitud>	360 	</altitud>
+							</coordenadasNacimiento>
+						</datosNacimiento>
+						<datosFallecimiento>
+							<fechaFallecimiento>9-3-2001</fechaFallecimiento>
+							<lugarFallecimiento>Ferrol</lugarFallecimiento>
+							<coordenadasFallecimiento>
+								<longitud>    -8.22275 </longitud>
+								<latitud>	 43.4883 </latitud>
+								<altitud>	15	</altitud>
+							</coordenadasFallecimiento>
+						</datosFallecimiento>
+						<fotografias>
+							<foto>fotodolo.jpg</foto>
+						</fotografias>
+						<videos>
+						</videos>
+						<comentarios> Tenia un 600</comentarios>
+						<padres>
+							<persona>
+								<nombre>Manuel</nombre>
+								<apellidos>Rigueira Fernandez </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>18-8-1910</fechaNacimiento>
+									<lugarNacimiento>Ferrol</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>    -8.22275 </longitud>
+										<latitud>	 43.4883 </latitud>
+										<altitud>	15	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>10-8-1986</fechaFallecimiento>
+									<lugarFallecimiento>Ferrol</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>    -8.22275 </longitud>
+										<latitud>	 43.4883 </latitud>
+										<altitud>	15	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotomanuel.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Le gustaba pescar</comentarios>
+							</persona>
+							<persona>
+								<nombre>Consolacion</nombre>
+								<apellidos>Lagoa Suarez </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>15-2-1908</fechaNacimiento>
+									<lugarNacimiento>Ferrol</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>    -8.22275 </longitud>
+										<latitud>	 43.4883 </latitud>
+										<altitud>	15	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>7-11-1992</fechaFallecimiento>
+									<lugarFallecimiento>Ferrol</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>    -8.22275 </longitud>
+										<latitud>	 43.4883 </latitud>
+										<altitud>	15	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoConsolacion.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Era profesora</comentarios>
+							</persona>
+						</padres>
+					</persona>
+					<persona>
+						<nombre>Daniel</nombre>
+						<apellidos>López Cao </apellidos>
+						<datosNacimiento>
+							<fechaNacimiento>2-2-1923</fechaNacimiento>
+							<lugarNacimiento>Monforte</lugarNacimiento>
+							<coordenadasNacimiento>
+								<longitud>   -7.4942300 </longitud>
+								<latitud>	42.5120100 </latitud>
+								<altitud>	360 	</altitud>
+							</coordenadasNacimiento>
+						</datosNacimiento>
+						<datosFallecimiento>
+							<fechaFallecimiento>13-3-1975</fechaFallecimiento>
+							<lugarFallecimiento>Ferrol</lugarFallecimiento>
+							<coordenadasFallecimiento>
+								<longitud>    -8.22275 </longitud>
+								<latitud>	 43.4883 </latitud>
+								<altitud>	15	</altitud>
+							</coordenadasFallecimiento>
+						</datosFallecimiento>
+						<fotografias>
+							<foto>fotoDaniCao.jpg</foto>
+						</fotografias>
+						<videos>
+						</videos>
+						<comentarios> Conducia un camion</comentarios>
+						<padres>
+							<persona>
+								<nombre>Visitacion</nombre>
+								<apellidos>Cao Somozas  </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>1-3-1900</fechaNacimiento>
+									<lugarNacimiento>Monforte</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>   -7.4942300 </longitud>
+										<latitud>	42.5120100 </latitud>
+										<altitud>	360 	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>5-6-1990</fechaFallecimiento>
+									<lugarFallecimiento>Ferrol</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>    -8.22275 </longitud>
+										<latitud>	 43.4883 </latitud>
+										<altitud>	15	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoVisitacion.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Tenia ojos azules</comentarios>
+							</persona>
+							<persona>
+								<nombre>Pedro</nombre>
+								<apellidos>López López </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>9-2-1897</fechaNacimiento>
+									<lugarNacimiento>Monforte</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>   -7.4942300 </longitud>
+										<latitud>	42.5120100 </latitud>
+										<altitud>	360 	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>6-7-1960</fechaFallecimiento>
+									<lugarFallecimiento>Monforte</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>   -7.4942300 </longitud>
+										<latitud>	42.5120100 </latitud>
+										<altitud>	360 	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoAbueloDani.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Fue policia</comentarios>
+							</persona>
+						</padres>
+					</persona>
+				</padres>
+			</persona>
+			<persona>
+				<nombre>Jose Manuel</nombre>
+				<apellidos>Pascual Vallina</apellidos>
+				<datosNacimiento>
+					<fechaNacimiento>2-5-1960</fechaNacimiento>
+					<lugarNacimiento>Villanueva</lugarNacimiento>
+					<coordenadasNacimiento>
+						<longitud>  -5.150874 </longitud>
+						<latitud>	43.36623576 </latitud>
+						<altitud>	69	</altitud>
+					</coordenadasNacimiento>
+				</datosNacimiento>
+				<fotografias>
+					<foto>fotopas.jpg</foto>
+				</fotografias>
+				<videos>
+					</videos>
+				<comentarios> Le gusta la montaña</comentarios>
+				<padres>
+					<persona>
+						<nombre>Dolores</nombre>
+						<apellidos>Vallina Trespando</apellidos>
+						<datosNacimiento>
+							<fechaNacimiento>12-5-1934</fechaNacimiento>
+							<lugarNacimiento>Corao</lugarNacimiento>
+							<coordenadasNacimiento>
+								<longitud>  -5.06545 </longitud>
+								<latitud>	43.34657731 </latitud>
+								<altitud>	80	</altitud>
+							</coordenadasNacimiento>
+							</datosNacimiento>
+							<datosFallecimiento>
+								<fechaFallecimiento>7-10-1981</fechaFallecimiento>
+								<lugarFallecimiento>Villanueva</lugarFallecimiento>
+								<coordenadasFallecimiento>
+									<longitud>  -5.150874 </longitud>
+									<latitud>	43.36623576 </latitud>
+									<altitud>	69	</altitud>
+								</coordenadasFallecimiento>
+							</datosFallecimiento>
+						
+						<fotografias>
+							<foto>fotoAbuelaCorao.jpg</foto>
+						</fotografias>
+						<videos>
+						</videos>
+						<comentarios> Compro la primera tele del pueblo</comentarios>
+						<padres>
+							<persona>
+								<nombre>Luz</nombre>
+								<apellidos>Trespando Suarez </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>1-1-1903</fechaNacimiento>
+									<lugarNacimiento>Corao</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>  -5.06545 </longitud>
+										<latitud>	43.34657731 </latitud>
+										<altitud>	80	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>1-1-1950</fechaFallecimiento>
+									<lugarFallecimiento>Corao</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>  -5.06545 </longitud>
+										<latitud>	43.34657731 </latitud>
+										<altitud>	80	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoLuz.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Viajo mucho</comentarios>
+							</persona>
+							<persona>
+								<nombre>Emiliano</nombre>
+								<apellidos>López Gomez</apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>2-2-1908</fechaNacimiento>
+									<lugarNacimiento>Oviedo</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>   -5.8555264 </longitud>
+										<latitud>	43.3639746 </latitud>
+										<altitud>	232 	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>4-6-1970</fechaFallecimiento>
+									<lugarFallecimiento>Oviedo</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>   -5.8555264 </longitud>
+										<latitud>	43.3639746 </latitud>
+										<altitud>	232 	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoEmiliano.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Trabajaba en un molino</comentarios>
+							</persona>
+						</padres>
+					</persona>
+					<persona>
+						<nombre>Manuel</nombre>
+						<apellidos>Pascual Gonzalez </apellidos>
+						<datosNacimiento>
+							<fechaNacimiento>26-7-1925</fechaNacimiento>
+							<lugarNacimiento>Villanueva</lugarNacimiento>
+							<coordenadasNacimiento>
+								<longitud>  -5.150874 </longitud>
+								<latitud>	43.36623576 </latitud>
+								<altitud>	69	</altitud>
+							</coordenadasNacimiento>
+						</datosNacimiento>
+						<datosFallecimiento>
+							<fechaFallecimiento>30-6-1998</fechaFallecimiento>
+							<lugarFallecimiento>Oviedo</lugarFallecimiento>
+							<coordenadasFallecimiento>
+								<longitud>   -5.8555264 </longitud>
+								<latitud>	43.3639746 </latitud>
+								<altitud>	232 	</altitud>
+							</coordenadasFallecimiento>
+						</datosFallecimiento>
+						<fotografias>
+							<foto>fotoAbuSalmon.jpg</foto>
+						</fotografias>
+						<videos>
+						</videos>
+						<comentarios> Siempre llevaba sombrero</comentarios>
+						<padres>
+							<persona>
+								<nombre>Jóse</nombre>
+								<apellidos>Pascual Martinez </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>17-8-190</fechaNacimiento>
+									<lugarNacimiento>Villanueva</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>  -5.150874 </longitud>
+										<latitud>	43.36623576 </latitud>
+										<altitud>	69	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>1-1-1936</fechaFallecimiento>
+									<lugarFallecimiento>?</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>   0 </longitud>
+										<latitud>	0 </latitud>
+										<altitud>	0 	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotojose.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Fue un general republicano</comentarios>
+							</persona>
+							<persona>
+								<nombre>Maria</nombre>
+								<apellidos>Gonzalez Herrero </apellidos>
+								<datosNacimiento>
+									<fechaNacimiento>9-9-1904</fechaNacimiento>
+									<lugarNacimiento>Villanueva</lugarNacimiento>
+									<coordenadasNacimiento>
+										<longitud>  -5.150874 </longitud>
+										<latitud>	43.36623576 </latitud>
+										<altitud>	69	</altitud>
+									</coordenadasNacimiento>
+								</datosNacimiento>
+								<datosFallecimiento>
+									<fechaFallecimiento>18-8-1964</fechaFallecimiento>
+									<lugarFallecimiento>Villanueva</lugarFallecimiento>
+									<coordenadasFallecimiento>
+										<longitud>  -5.150874 </longitud>
+										<latitud>	43.36623576 </latitud>
+										<altitud>	69	</altitud>
+									</coordenadasFallecimiento>
+								</datosFallecimiento>
+								<fotografias>
+									<foto>fotoMaria.jpg</foto>
+								</fotografias>
+								<videos>
+								</videos>
+								<comentarios> Tenia un collar de plata</comentarios>
+							</persona>
+						</padres>
+					</persona>
+				</padres>
+			</persona>
+		</padres>
+	</persona>
+</arbol>

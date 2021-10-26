@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<arbol 
-xmlns="http://www.uniovi.es"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
+<!DOCTYPE arbol SYSTEM "arbol.dtd">
+<arbol>
 	<persona>
 		<nombre>Daniel</nombre>
 		<apellidos>Pascual Lopez</apellidos>
@@ -19,8 +16,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 		<fotografias>
 			<foto>fotoMia.jpg</foto>
 		</fotografias>
-		<videos>
-			</videos>
 		<comentarios> Soy estudiante en EII OVIEDO</comentarios>
 		<padres>
 			<persona>
@@ -38,8 +33,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 				<fotografias>
 					<foto>fotoMama.jpg</foto>
 				</fotografias>
-				<videos>
-					</videos>
 				<comentarios> Hace muy buenos frixuelos</comentarios>
 				<padres>
 					<persona>
@@ -66,8 +59,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 						<fotografias>
 							<foto>fotodolo.jpg</foto>
 						</fotografias>
-						<videos>
-						</videos>
 						<comentarios> Tenia un 600</comentarios>
 						<padres>
 							<persona>
@@ -94,8 +85,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotomanuel.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Le gustaba pescar</comentarios>
 							</persona>
 							<persona>
@@ -122,8 +111,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoConsolacion.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Era profesora</comentarios>
 							</persona>
 						</padres>
@@ -152,8 +139,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 						<fotografias>
 							<foto>fotoDaniCao.jpg</foto>
 						</fotografias>
-						<videos>
-						</videos>
 						<comentarios> Conducia un camion</comentarios>
 						<padres>
 							<persona>
@@ -180,8 +165,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoVisitacion.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Tenia ojos azules</comentarios>
 							</persona>
 							<persona>
@@ -208,8 +191,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoAbueloDani.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Fue policia</comentarios>
 							</persona>
 						</padres>
@@ -231,8 +212,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 				<fotografias>
 					<foto>fotopas.jpg</foto>
 				</fotografias>
-				<videos>
-					</videos>
 				<comentarios> Le gusta la montaña</comentarios>
 				<padres>
 					<persona>
@@ -246,22 +225,19 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<latitud>	43.34657731 </latitud>
 								<altitud>	80	</altitud>
 							</coordenadasNacimiento>
-							</datosNacimiento>
-							<datosFallecimiento>
-								<fechaFallecimiento>7-10-1981</fechaFallecimiento>
-								<lugarFallecimiento>Villanueva</lugarFallecimiento>
-								<coordenadasFallecimiento>
-									<longitud>  -5.150874 </longitud>
-									<latitud>	43.36623576 </latitud>
-									<altitud>	69	</altitud>
-								</coordenadasFallecimiento>
-							</datosFallecimiento>
-						
+						</datosNacimiento>
+						<datosFallecimiento>
+							<fechaFallecimiento>7-10-1981</fechaFallecimiento>
+							<lugarFallecimiento>Villanueva</lugarFallecimiento>
+							<coordenadasFallecimiento>
+								<longitud>  -5.150874 </longitud>
+								<latitud>	43.36623576 </latitud>
+								<altitud>	69	</altitud>
+							</coordenadasFallecimiento>
+						</datosFallecimiento>
 						<fotografias>
 							<foto>fotoAbuelaCorao.jpg</foto>
 						</fotografias>
-						<videos>
-						</videos>
 						<comentarios> Compro la primera tele del pueblo</comentarios>
 						<padres>
 							<persona>
@@ -288,8 +264,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoLuz.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Viajo mucho</comentarios>
 							</persona>
 							<persona>
@@ -316,8 +290,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoEmiliano.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Trabajaba en un molino</comentarios>
 							</persona>
 						</padres>
@@ -346,8 +318,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 						<fotografias>
 							<foto>fotoAbuSalmon.jpg</foto>
 						</fotografias>
-						<videos>
-						</videos>
 						<comentarios> Siempre llevaba sombrero</comentarios>
 						<padres>
 							<persona>
@@ -374,8 +344,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotojose.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Fue un general republicano</comentarios>
 							</persona>
 							<persona>
@@ -402,8 +370,6 @@ xsi:schemaLocation="http://www.uniovi.es arbol.xsd" >
 								<fotografias>
 									<foto>fotoMaria.jpg</foto>
 								</fotografias>
-								<videos>
-								</videos>
 								<comentarios> Tenia un collar de plata</comentarios>
 							</persona>
 						</padres>

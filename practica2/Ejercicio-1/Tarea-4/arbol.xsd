@@ -15,7 +15,7 @@
         <xs:element ref="datosNacimiento" />
         <xs:element minOccurs="0" maxOccurs="1" ref="datosFallecimiento" />
         <xs:element ref="fotografias" />
-        <xs:element ref="videos" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="videos" />
         <xs:element ref="comentarios" />
         <xs:element minOccurs="0" maxOccurs="1" ref="padres" />
       </xs:sequence>
@@ -85,7 +85,7 @@
   <xs:element name="videos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="unbounded" ref="video" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="video" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

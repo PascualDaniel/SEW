@@ -3,7 +3,7 @@
 <!ELEMENT persona (nombre,apellidos,
                     datosNacimiento,
                     datosFallecimiento?,
-                    fotografias,videos,
+                    fotografias,videos?,
 					comentarios,
                     padres?)>
 
@@ -32,7 +32,7 @@
 <!ELEMENT fotografias (foto+)>
 <!ELEMENT foto (#PCDATA)>
 
-<!ELEMENT videos (video*)>
+<!ELEMENT videos (video+)>
 <!ELEMENT video (#PCDATA)>
 
 <!ELEMENT comentarios (#PCDATA)>

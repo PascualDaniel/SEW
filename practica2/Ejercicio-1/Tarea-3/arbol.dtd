@@ -1,14 +1,11 @@
 <!ELEMENT arbol (persona)>
 
 <!ELEMENT persona (nombre,apellidos,
-                    datosNacimiento,
-                    datosFallecimiento?,
-                    fotografias,videos,
-					comentarios,
-                    padres?)>
+                    datosNacimiento,datosFallecimiento?,fotografias,videos?,comentarios,
+					persona?,persona?)>
 
 
-<!ELEMENT padres (persona,persona)>
+
 
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellidos (#PCDATA)>
@@ -32,7 +29,7 @@
 <!ELEMENT fotografias (foto+)>
 <!ELEMENT foto (#PCDATA)>
 
-<!ELEMENT videos (video*)>
+<!ELEMENT videos (video+)>
 <!ELEMENT video (#PCDATA)>
 
 <!ELEMENT comentarios (#PCDATA)>

@@ -7,20 +7,20 @@ xmlns="http://www.uniovi.es/arbol">
   <xs:element name="arbol">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="persona" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="persona" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="persona">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="nombre" />
-        <xs:element ref="apellidos" />
-        <xs:element ref="datosNacimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="nombre" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="apellidos" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="datosNacimiento" />
         <xs:element minOccurs="0" maxOccurs="1" ref="datosFallecimiento" />
-        <xs:element ref="fotografias" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="fotografias" />
         <xs:element minOccurs="0" maxOccurs="1" ref="videos" />
-        <xs:element ref="comentarios" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="comentarios" />
         <xs:element minOccurs="0" maxOccurs="1" ref="persona" />
         <xs:element minOccurs="0" maxOccurs="1" ref="persona" />
       </xs:sequence>
@@ -31,13 +31,13 @@ xmlns="http://www.uniovi.es/arbol">
   <xs:element name="datosNacimiento">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="fechaNacimiento" />
-        <xs:element ref="lugarNacimiento" />
-        <xs:element ref="coordenadasNacimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="fechaNacimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="lugarNacimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="coordenadasNacimiento" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="fechaNacimiento" type="xs:string" />
+  <xs:element name="fechaNacimiento" type="xs:date" />
   <xs:element name="lugarNacimiento" type="xs:string" />
   <xs:element name="coordenadasNacimiento">
     <xs:complexType>
@@ -51,26 +51,26 @@ xmlns="http://www.uniovi.es/arbol">
   <xs:element name="datosFallecimiento">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="fechaFallecimiento" />
-        <xs:element ref="lugarFallecimiento" />
-        <xs:element ref="coordenadasFallecimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="fechaFallecimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="lugarFallecimiento" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="coordenadasFallecimiento" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="fechaFallecimiento" type="xs:string" />
+  <xs:element name="fechaFallecimiento" type="xs:date" />
   <xs:element name="lugarFallecimiento" type="xs:string" />
   <xs:element name="coordenadasFallecimiento">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="longitud" />
-        <xs:element ref="latitud" />
-        <xs:element ref="altitud" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="longitud" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="latitud" />
+        <xs:element  minOccurs="1" maxOccurs="1"  ref="altitud" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="longitud" type="xs:string" />
-  <xs:element name="latitud" type="xs:string" />
-  <xs:element name="altitud" type="xs:string" />
+  <xs:element name="longitud" type="xs:double" />
+  <xs:element name="latitud" type="xs:double" />
+  <xs:element name="altitud" type="xs:double" />
   <xs:element name="fotografias">
     <xs:complexType>
       <xs:sequence>
@@ -82,7 +82,7 @@ xmlns="http://www.uniovi.es/arbol">
   <xs:element name="videos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="1" maxOccurs="unbounded" ref="video" />
+        <xs:element minOccurs="1" maxOccurs="3" ref="video" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

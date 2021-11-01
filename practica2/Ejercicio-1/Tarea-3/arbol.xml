@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE arbol SYSTEM "arbol.dtd">
-<arbol>
+
+<arbol xmlns="http://www.uniovi.es/arbol"
+xsi:schemaLocation="http://www.uniovi.es/arbol
+arbol.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<persona>
 		<nombre>Daniel</nombre>
 		<apellidos>Pascual Lopez</apellidos>
-		
 		<datosNacimiento>
-			<fechaNacimiento>14-07-2000</fechaNacimiento>
+			<fechaNacimiento>2000-07-14</fechaNacimiento>
 			<lugarNacimiento>Arriondas</lugarNacimiento>
 			<coordenadasNacimiento>
-				<longitud>   -5.823948 </longitud>
-				<latitud>	43.382945 </latitud>
-				<altitud>	232	</altitud>
+				
+				<longitud>   -5.1872</longitud>
+				<latitud>	43.3849108 </latitud>
+				<altitud>	40	</altitud>
 			</coordenadasNacimiento>
+			 
 		</datosNacimiento>
 		<fotografias>
 			<foto>fotoMia.jpg</foto>
@@ -24,7 +28,7 @@
 				<apellidos>Lopez Rigueira</apellidos>
 				
 				<datosNacimiento>
-					<fechaNacimiento>2-5-1965</fechaNacimiento>
+					<fechaNacimiento>1965-05-02</fechaNacimiento>
 					<lugarNacimiento>Ferrol</lugarNacimiento>
 					<coordenadasNacimiento>
 						<longitud>    -8.22275 </longitud>
@@ -42,7 +46,7 @@
 						<apellidos>Rigueira Lagoa </apellidos>
 						
 						<datosNacimiento>
-							<fechaNacimiento>4-8-1940</fechaNacimiento>
+							<fechaNacimiento>1940-04-08</fechaNacimiento>
 							<lugarNacimiento>Monforte</lugarNacimiento>
 							<coordenadasNacimiento>
 								<longitud>   -7.4942300 </longitud>
@@ -51,7 +55,7 @@
 							</coordenadasNacimiento>
 						</datosNacimiento>
 						<datosFallecimiento>
-							<fechaFallecimiento>9-3-2001</fechaFallecimiento>
+							<fechaFallecimiento>2001-09-03</fechaFallecimiento>
 							<lugarFallecimiento>Ferrol</lugarFallecimiento>
 							<coordenadasFallecimiento>
 								<longitud>    -8.22275 </longitud>
@@ -69,7 +73,7 @@
 								<apellidos>Rigueira Fernandez </apellidos>
 								
 								<datosNacimiento>
-									<fechaNacimiento>18-8-1910</fechaNacimiento>
+									<fechaNacimiento>1910-10-18</fechaNacimiento>
 									<lugarNacimiento>Ferrol</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>    -8.22275 </longitud>
@@ -78,7 +82,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>10-8-1986</fechaFallecimiento>
+									<fechaFallecimiento>1986-10-08</fechaFallecimiento>
 									<lugarFallecimiento>Ferrol</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>    -8.22275 </longitud>
@@ -97,7 +101,7 @@
 								<apellidos>Lagoa Suarez </apellidos>
 								
 								<datosNacimiento>
-									<fechaNacimiento>15-2-1908</fechaNacimiento>
+									<fechaNacimiento>1908-05-12</fechaNacimiento>
 									<lugarNacimiento>Ferrol</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>    -8.22275 </longitud>
@@ -106,7 +110,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>7-11-1992</fechaFallecimiento>
+									<fechaFallecimiento>1992-07-11</fechaFallecimiento>
 									<lugarFallecimiento>Ferrol</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>    -8.22275 </longitud>
@@ -124,10 +128,10 @@
 					</persona>
 					<persona>
 						<nombre>Daniel</nombre>
-						<apellidos>López Cao </apellidos>
+						<apellidos>Lopez Cao </apellidos>
 					
 						<datosNacimiento>
-							<fechaNacimiento>2-2-1923</fechaNacimiento>
+							<fechaNacimiento>1923-02-02</fechaNacimiento>
 							<lugarNacimiento>Monforte</lugarNacimiento>
 							<coordenadasNacimiento>
 								<longitud>   -7.4942300 </longitud>
@@ -136,7 +140,7 @@
 							</coordenadasNacimiento>
 						</datosNacimiento>
 						<datosFallecimiento>
-							<fechaFallecimiento>13-3-1975</fechaFallecimiento>
+							<fechaFallecimiento>1975-01-13</fechaFallecimiento>
 							<lugarFallecimiento>Ferrol</lugarFallecimiento>
 							<coordenadasFallecimiento>
 								<longitud>    -8.22275 </longitud>
@@ -154,7 +158,7 @@
 								<apellidos>Cao Somozas  </apellidos>
 							
 								<datosNacimiento>
-									<fechaNacimiento>1-3-1900</fechaNacimiento>
+									<fechaNacimiento>1900-01-03</fechaNacimiento>
 									<lugarNacimiento>Monforte</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>   -7.4942300 </longitud>
@@ -163,7 +167,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>5-6-1990</fechaFallecimiento>
+									<fechaFallecimiento>1990-05-06</fechaFallecimiento>
 									<lugarFallecimiento>Ferrol</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>    -8.22275 </longitud>
@@ -179,10 +183,10 @@
 							</persona>
 							<persona>
 								<nombre>Pedro</nombre>
-								<apellidos>López López </apellidos>
+								<apellidos>Lopez Lopez </apellidos>
 							
 								<datosNacimiento>
-									<fechaNacimiento>9-2-1897</fechaNacimiento>
+									<fechaNacimiento>1897-09-02</fechaNacimiento>
 									<lugarNacimiento>Monforte</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>   -7.4942300 </longitud>
@@ -191,7 +195,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>6-7-1960</fechaFallecimiento>
+									<fechaFallecimiento>1960-06-07</fechaFallecimiento>
 									<lugarFallecimiento>Monforte</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>   -7.4942300 </longitud>
@@ -214,7 +218,7 @@
 				<apellidos>Pascual Vallina</apellidos>
 			
 				<datosNacimiento>
-					<fechaNacimiento>2-5-1960</fechaNacimiento>
+					<fechaNacimiento>1960-02-05</fechaNacimiento>
 					<lugarNacimiento>Villanueva</lugarNacimiento>
 					<coordenadasNacimiento>
 						<longitud>  -5.150874 </longitud>
@@ -225,14 +229,14 @@
 				<fotografias>
 					<foto>fotopas.jpg</foto>
 				</fotografias>
-				<comentarios> Le gusta la montaña</comentarios>
+				<comentarios> Le gusta el monte</comentarios>
 			
 					<persona>
 						<nombre>Dolores</nombre>
 						<apellidos>Vallina Trespando</apellidos>
 					
 						<datosNacimiento>
-							<fechaNacimiento>12-5-1934</fechaNacimiento>
+							<fechaNacimiento>1934-12-05</fechaNacimiento>
 							<lugarNacimiento>Corao</lugarNacimiento>
 							<coordenadasNacimiento>
 								<longitud>  -5.06545 </longitud>
@@ -241,7 +245,7 @@
 							</coordenadasNacimiento>
 						</datosNacimiento>
 						<datosFallecimiento>
-							<fechaFallecimiento>7-10-1981</fechaFallecimiento>
+							<fechaFallecimiento>1981-07-10</fechaFallecimiento>
 							<lugarFallecimiento>Villanueva</lugarFallecimiento>
 							<coordenadasFallecimiento>
 								<longitud>  -5.150874 </longitud>
@@ -259,7 +263,7 @@
 								<apellidos>Trespando Suarez </apellidos>
 								
 								<datosNacimiento>
-									<fechaNacimiento>1-1-1903</fechaNacimiento>
+									<fechaNacimiento>1903-01-01</fechaNacimiento>
 									<lugarNacimiento>Corao</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>  -5.06545 </longitud>
@@ -268,7 +272,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>1-1-1950</fechaFallecimiento>
+									<fechaFallecimiento>1950-11-01</fechaFallecimiento>
 									<lugarFallecimiento>Corao</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>  -5.06545 </longitud>
@@ -284,10 +288,10 @@
 							</persona>
 							<persona>
 								<nombre>Emiliano</nombre>
-								<apellidos>López Gomez</apellidos>
+								<apellidos>Vallina Gomez</apellidos>
 						
 								<datosNacimiento>
-									<fechaNacimiento>2-2-1908</fechaNacimiento>
+									<fechaNacimiento>1908-02-02</fechaNacimiento>
 									<lugarNacimiento>Oviedo</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>   -5.8555264 </longitud>
@@ -296,7 +300,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>4-6-1970</fechaFallecimiento>
+									<fechaFallecimiento>1970-04-06</fechaFallecimiento>
 									<lugarFallecimiento>Oviedo</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>   -5.8555264 </longitud>
@@ -317,7 +321,7 @@
 						<apellidos>Pascual Gonzalez </apellidos>
 					
 						<datosNacimiento>
-							<fechaNacimiento>26-7-1925</fechaNacimiento>
+							<fechaNacimiento>1925-02-27</fechaNacimiento>
 							<lugarNacimiento>Villanueva</lugarNacimiento>
 							<coordenadasNacimiento>
 								<longitud>  -5.150874 </longitud>
@@ -326,7 +330,7 @@
 							</coordenadasNacimiento>
 						</datosNacimiento>
 						<datosFallecimiento>
-							<fechaFallecimiento>30-6-1998</fechaFallecimiento>
+							<fechaFallecimiento>1998-03-30</fechaFallecimiento>
 							<lugarFallecimiento>Oviedo</lugarFallecimiento>
 							<coordenadasFallecimiento>
 								<longitud>   -5.8555264 </longitud>
@@ -340,11 +344,11 @@
 						<comentarios> Siempre llevaba sombrero</comentarios>
 				
 							<persona>
-								<nombre>Jóse</nombre>
+								<nombre>Jose</nombre>
 								<apellidos>Pascual Martinez </apellidos>
 						
 								<datosNacimiento>
-									<fechaNacimiento>17-8-190</fechaNacimiento>
+									<fechaNacimiento>1893-08-29</fechaNacimiento>
 									<lugarNacimiento>Villanueva</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>  -5.150874 </longitud>
@@ -353,7 +357,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>1-1-1936</fechaFallecimiento>
+									<fechaFallecimiento>1936-01-01</fechaFallecimiento>
 									<lugarFallecimiento>?</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>   0 </longitud>
@@ -372,7 +376,7 @@
 								<apellidos>Gonzalez Herrero </apellidos>
 							
 								<datosNacimiento>
-									<fechaNacimiento>9-9-1904</fechaNacimiento>
+									<fechaNacimiento>1904-09-09</fechaNacimiento>
 									<lugarNacimiento>Villanueva</lugarNacimiento>
 									<coordenadasNacimiento>
 										<longitud>  -5.150874 </longitud>
@@ -381,7 +385,7 @@
 									</coordenadasNacimiento>
 								</datosNacimiento>
 								<datosFallecimiento>
-									<fechaFallecimiento>18-8-1964</fechaFallecimiento>
+									<fechaFallecimiento>1964-08-18</fechaFallecimiento>
 									<lugarFallecimiento>Villanueva</lugarFallecimiento>
 									<coordenadasFallecimiento>
 										<longitud>  -5.150874 </longitud>

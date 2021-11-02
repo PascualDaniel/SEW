@@ -82,23 +82,16 @@
 
     /* Especificidad -> (0,0,2) */ 
     main ul {
-        list-style-type: square;
+        list-style-type: none;
     }
-     /* Especificidad -> (0,0,2) */
-    main table, th,td{
-        border: 1px solid #353535;
+    img{
+        height: auto;
+        width: 30%;
+    }
+    video{
+        height: auto;
+        width: 80%;
+    }
 
-    }
-    /* Especificidad -> (0,0,3) */
-    main table th{
-        background-color: #284B63;
-        color: #FFFFFF;
-    }
-    /* Especificidad -> (0,0,3) */
-    main table td{
-        background-color: #cddfeb;
-        color: #000000;
-    }
-   
    
     

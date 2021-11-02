@@ -50,7 +50,7 @@ def addPerson(persona):
         if(element.tag == "{http://www.uniovi.es/arbol}videos"):
             i=1
             for video in element:
-                texto += "<li><video src=\"multimedia/"+ video.text+"\"></video></li>\n"
+                texto += "<li><video src=\"multimedia/"+ video.text+"\" controls muted preload=\"auto\" ></video></li>\n"
         if(element.tag == "{http://www.uniovi.es/arbol}persona"):
             texto += addPerson(element)   
     texto += "</ul>\n"

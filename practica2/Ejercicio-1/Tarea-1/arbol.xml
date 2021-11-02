@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<arbol xmlns="http://www.uniovi.es/arbol"
-xsi:schemaLocation="http://www.uniovi.es/arbol
-arbol.xsd"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<!DOCTYPE arbol SYSTEM "arbol.dtd">
+<arbol >
 	<persona>
 		<nombre>Daniel</nombre>
 		<apellidos>Pascual Lopez</apellidos>

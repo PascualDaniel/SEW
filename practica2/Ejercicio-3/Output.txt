@@ -1,0 +1,25 @@
+=> Componentes del XAML:
+	-Componente: Label, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,38,0,0
+	-Componente: Label, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,87,0,0
+	-Componente: CheckBox, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,201,0,0
+	-Componente: ComboBox, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,269,0,0
+	-Componente: RadioButton, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,155,0,0
+	-Componente: Button, con una dispocicion:
+		HorizontalAlignment:Left
+		VerticalAlignment:Top
+		Margin:25,351,0,0

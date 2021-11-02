@@ -40,7 +40,7 @@ def addPerson(persona):
             longitud=coordenadas.find('{http://www.uniovi.es/arbol}longitud').text
             latitud=coordenadas.find('{http://www.uniovi.es/arbol}latitud').text
             altitud=coordenadas.find('{http://www.uniovi.es/arbol}altitud').text 
-            texto += "<a>Muerio en: "+lugar +" el "+ fecha+" - "+longitud+","+latitud+","+altitud+"</a>\n"             
+            texto += "<a>Murio en: "+lugar +" el "+ fecha+" - "+longitud+","+latitud+","+altitud+"</a>\n"             
             texto += "</li>\n"
         if(element.tag == "{http://www.uniovi.es/arbol}fotografias"):
             i=1
@@ -95,7 +95,7 @@ def addHtmlHead(text):
 
 
 def saveToFile(text):
-    text_file = open("Output.html", "w")
+    text_file = open("index.html", "w")
     text_file.write(text)
     text_file.close()
 

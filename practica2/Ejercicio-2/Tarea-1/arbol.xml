@@ -39,6 +39,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 				<fotografias>
 					<foto>fotoMama.jpg</foto>
 				</fotografias>
+				<videos>
+					<video>videoMio.mp4</video>
+
+				</videos>
 				<comentarios> Hace muy buenos frixuelos</comentarios>
 				
 					<persona>

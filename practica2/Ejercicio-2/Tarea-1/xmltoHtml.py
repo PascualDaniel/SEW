@@ -45,12 +45,12 @@ def addPerson(persona):
         if(element.tag == "{http://www.uniovi.es/arbol}fotografias"):
             i=1
             for foto in element:
-                texto += "<li><img src=\""+ foto.text+"\"  alt = \""+name+apellidos+str(i)+ "\" ></li>\n"
+                texto += "<li><img src=\"multimedia/"+ foto.text+"\"  alt = \""+name+apellidos+str(i)+ "\" ></li>\n"
                 i+=1
         if(element.tag == "{http://www.uniovi.es/arbol}videos"):
             i=1
             for video in element:
-                texto += "<li><video src=\""+ video.text+"\"></video></li>\n"
+                texto += "<li><video src=\"multimedia/"+ video.text+"\"></video></li>\n"
         if(element.tag == "{http://www.uniovi.es/arbol}persona"):
             texto += addPerson(element)   
     texto += "</ul>\n"

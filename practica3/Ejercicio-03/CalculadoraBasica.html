@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Simple</title>
+    <link rel="stylesheet" href="CalculadoraBasica.css" />
+    <script  src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+
+    <h1>Calculadora Básica por Daniel Pascual</h1>
+
+    <main>
+      
+            <input id="pantallaAnterior" type="text" readonly  value="0">
+            <input id="pantallaActual" type="text" readonly  value="0">
+            
+            <p>
+                    <input type="button"  value="mrc" onclick="calculadora.sacarMemoria()">
+                    <input type="button"  value="m-" onclick="calculadora.restarMemoria()">
+                    <input type="button"  value="m+" onclick="calculadora.sumarMemoria()">
+                    <input type="button"  value="/" onclick="calculadora.addElement('/')">
+               
+                    <input type="button" value="7" onclick="calculadora.addElement('7')">
+                    <input type="button" value="8" onclick="calculadora.addElement('8')">
+                    <input type="button" value="9" onclick="calculadora.addElement('9')">
+                    <input type="button"  value="*" onclick="calculadora.addElement('*')">
+               
+                    <input type="button" value="4" onclick="calculadora.addElement('4')">
+                    <input type="button" value="5" onclick="calculadora.addElement('5')">
+                    <input type="button" value="6" onclick="calculadora.addElement('6')">
+                    <input type="button"  value="-" onclick="calculadora.addElement('-')">
+                
+                    <input type="button" value="1" onclick="calculadora.addElement('1')">
+                    <input type="button" value="2" onclick="calculadora.addElement('2')">
+                    <input type="button" value="3" onclick="calculadora.addElement('3')">
+                    <input type="button"  value="+" onclick="calculadora.addElement('+')">
+                
+                    <input type="button" value="0" onclick="calculadora.addElement('0')">
+                    <input type="button" value="." onclick="calculadora.addElement('.')">
+                    <input type="button" value="C" onclick="calculadora.limpiar()">
+                    <input type="button" value="=" onclick="calculadora.calc()">
+            </p>
+          
+        </main>
+</body>
+
+</html>

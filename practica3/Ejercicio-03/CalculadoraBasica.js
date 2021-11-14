@@ -14,7 +14,12 @@ class Calculadora {
     }
     calc(){
          try{
-            this.vPantalla = new Number(eval(this.vPantalla));
+             //Solucion1
+
+             const tokens =this.tokenize(this.vPantalla);
+          //  print(tokens);
+            this.vPantalla = eval(tokens.join(''));
+
             document.getElementById('pantalla').value =this.vPantalla;
          }catch(err){
             this.vPantalla = "Error: "+err;
@@ -23,7 +28,7 @@ class Calculadora {
     }
     limpiar(){
         try{    
-            this.vPantalla = new Number("0");
+            this.vPantalla = "0";
             document.getElementById('pantalla').value =this.vPantalla;
         }catch(err){
             this.vPantalla = "Error: "+err;
@@ -47,7 +52,7 @@ class Calculadora {
 
         }catch(err){
             this.vPantalla = "Error: "+err;
-            document.getElementById('pantalla').v =this.vPantalla;
+            document.getElementById('pantalla').value =this.vPantalla;
         }
     }
     //MRC
@@ -57,6 +62,30 @@ class Calculadora {
         document.getElementById('pantalla').value =this.vPantalla;
          
     }
+
+    tokenize(s) {
+        // --- Parse a calculation string into an array of numbers and operators
+        const r = [];
+        let token = '';
+        for (const character of s) {
+            if ('^*/+-'.indexOf(character) > -1) {
+                if (token === '' && character === '-') {
+                    token = '-';
+                } else {
+                    r.push(new Number(token), character);
+                    token = '';
+                }
+            } else {
+                token += character;
+            }
+        }
+        if (token !== '') {
+            r.push(new Number(token));
+        }
+        console.log(r);
+        return r;
+    }
+    
 }
 
 var calculadora = new Calculadora();

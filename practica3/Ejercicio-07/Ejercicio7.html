@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejercicio 7</h1>
+    </header>
+
+    <main>
+        <h2>Texto cambiable : </h2>
+        <section>
+
+           
+
+            <input title="Cambiar" type="text" value="Adios" id="Cambiartext">
+            <input accesskey="c" type="button" value="Cambiar" onclick="pe.accionModificar()">
+            <p>Hola</p>
+
+        </section>
+
+        <h2>Ocultar y Aparecer:</h2>
+        <section>
+            <input accesskey="o" type="button" value="ocultar" onclick="pe.Ocultar()">
+            <input accesskey="m" type="button" value="mostar" onclick="pe.Mostrar()">
+            <p>Texto Ocultable</p>
+        </section>
+
+        <h2>Añadir y Borrar:</h2>
+        <section>
+            <p>Añadir:
+
+                <input title="n1" type="number" value="1" >
+                <input title="n2" type="number" value="2">
+                <input title="n3" type="number" value="3" >
+                <input type="button" value="Añadir" onclick="pe.accionAñadir()">
+            </p>
+
+            <p>
+                Sumar filas:
+                <input accesskey="s" type="button" value="Sumar" onclick="pe.sumarFilasAction()">
+            </p>
+            <p>
+                Sumar Columnas:
+                <input accesskey="s" type="button" value="Sumar" onclick="pe.sumarColumnasAction()">
+            </p>
+            <p>
+                Borrar Tabla:
+                <input accesskey="b" type="button" value="Borrar" onclick="pe.removeAction()">
+            </p>
+            <p>
+                Recorrer Todo:
+                <input accesskey="r" type="button" value="Recorrer" onclick="pe.recorrerDocumento()">
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>N1</th>
+                        <th>N2</th>
+                        <th>N3</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <td >0</td>
+                        <td >0</td>
+                        <td >0</td>
+                        <td >0</td>
+                    </tr>
+
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

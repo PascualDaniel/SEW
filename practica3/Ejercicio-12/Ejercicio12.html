@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="Ejercicio12.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+    
+</head>
+
+<body>
+    <header>
+    <h1>Ejercicio 12</h1>      
+    </header>
+
+    <div id="seleccion">
+        <label for="archivoTexto">Selección de un txt, json o xml: </label><br>
+        <input type="file" id="archivoTexto" accesskey="A"  onchange="car.metodo(this.files);">
+    </div>
+    
+      
+    <div id ="datos">
+
+        <p id ="name"> Nombre del archivo:</p> 
+        <p id ="size"> Tamaño del archivo:</p> 
+        <p id ="type"> Tipo del archivo:</p> 
+        <p id ="date"> Fecha de la última modificación:</p> 
+        <p id ="contentName">  Contenido del archivo de texto: </p> 
+        <pre id = "contenido" ></pre>
+    </div>
+
+</body>
+
+</html>

@@ -33,6 +33,3 @@ input{
     
     font-size: 1.2em;
 }
-main section:nth-of-type(1) input[title="Cambiar"]{
-    background-color: brown;
-}

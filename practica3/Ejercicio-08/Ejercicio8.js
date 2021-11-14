@@ -9,6 +9,8 @@ class Meteo {
         this.ciudad1 = "Aviles";
         this.ciudad2 = "Oviedo";
         this.ciudad3 = "Ferrol";
+        this.ciudad4 = "Ribadesella";
+        this.ciudad5 = "Pontedeume";
 
 
 
@@ -23,6 +25,8 @@ class Meteo {
         this.addJSON(this.ciudad1);
         this.addJSON(this.ciudad2);
         this.addJSON(this.ciudad3);
+        this.addJSON(this.ciudad4);
+        this.addJSON(this.ciudad5);
 
     }
 

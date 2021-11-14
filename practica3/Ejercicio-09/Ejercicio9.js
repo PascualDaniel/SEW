@@ -8,9 +8,9 @@ class Meteo {
 
         this.ciudad1 = "Aviles";
         this.ciudad2 = "Oviedo";
-        this.ciudad3 = "Gijon";
-        this.ciudad4 = "Covadonga";
-        this.ciudad5 = "LLanes";
+        this.ciudad3 = "Ferrol";
+        this.ciudad4 = "Ribadesella";
+        this.ciudad5 = "Pontedeume";
 
         this.codigoPais = "ES";
         this.unidades = "&units=metric";

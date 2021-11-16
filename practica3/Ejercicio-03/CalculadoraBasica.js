@@ -16,7 +16,7 @@ class Calculadora {
          try{
              //Solucion1
 
-             const tokens =this.tokenize(this.vPantalla);
+             let tokens =this.tokenize(this.vPantalla);
           //  print(tokens);
             this.vPantalla = eval(tokens.join(''));
 
@@ -63,16 +63,16 @@ class Calculadora {
          
     }
 
-    tokenize(s) {
+    tokenize(text) {
         // --- Parse a calculation string into an array of numbers and operators
-        const r = [];
+        const tokens = [];
         let token = '';
-        for (const character of s) {
+        for (const character of text) {
             if ('^*/+-'.indexOf(character) > -1) {
                 if (token === '' && character === '-') {
                     token = '-';
                 } else {
-                    r.push(new Number(token), character);
+                    tokens.push(new Number(token), character);
                     token = '';
                 }
             } else {
@@ -80,10 +80,10 @@ class Calculadora {
             }
         }
         if (token !== '') {
-            r.push(new Number(token));
+            tokens.push(new Number(token));
         }
-        console.log(r);
-        return r;
+        console.log(tokens);
+        return tokens;
     }
     
 }

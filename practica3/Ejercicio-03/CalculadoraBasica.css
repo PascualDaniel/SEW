@@ -14,20 +14,7 @@ main{
     justify-content: center;
     max-width: 30em;
 }
-main input[type="text"]:nth-child(1){
-    width: 80%;
-    min-height: 1em;
- 
-    text-align: right;
-    align-self: center;
-    font-size: 2.5em;
 
-    background-color: rgb(169, 211, 168);
-    color:black;
-    overflow: hidden;
-    margin-top: 0.5em;
-
-}
 main input[type="text"]:nth-child(2){
     width: 80%;
     min-height: 2em;
@@ -39,16 +26,20 @@ main input[type="text"]:nth-child(2){
     background-color: rgb(169, 211, 168);
     color:black;
     overflow: hidden;
+    margin-top: 0.5em;
     margin-bottom: 1em;
 
 }
 main p{
-    margin: 1em;
+    margin: 1.5em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
+    grid-gap: 1.5em;
 }
 input[type="button"] {
+    height:3em;
+    width:3em;
+    cursor:pointer;
     font-size:1.4em;
     background-color:rgb(228, 228, 228) ;
     color:black;

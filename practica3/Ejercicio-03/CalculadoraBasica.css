@@ -52,3 +52,8 @@ main p input[type="button"]:last-child{
     background-color:rgb(34, 34, 34) ;
     color:rgb(255, 255, 255);
 }
+main p input[type="button"]:nth-child(-n+3) {
+    background-color:rgb(49, 49, 49) ;
+    color:rgb(255, 255, 255);
+  
+}

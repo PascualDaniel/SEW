@@ -21,11 +21,17 @@ class Calculadora {
         try {
             //Solucion1
 
+
+            if(Number.isInteger(  this.vPantalla)){
+
+            }
+            else{
             let tokens = this.tokenize(this.vPantalla);
             //print(tokens);
             this.vPantalla = eval(tokens.join(''));
 
             document.getElementById('pantalla').value = this.vPantalla;
+            }
         } catch (err) {
             this.vPantalla = "Error: " + err;
             document.getElementById('pantalla').value = this.vPantalla;
@@ -44,7 +50,7 @@ class Calculadora {
     sumarMemoria() {
         try {
             this.calc();
-            this.memoria = new Number(eval(this.memoria + " + " + new Number(this.vPantalla)));
+            this.memoria = new Number( eval(this.memoria+"+"+ this.vPantalla));
 
         } catch (err) {
             this.vPantalla = "Error: " + err;
@@ -55,7 +61,7 @@ class Calculadora {
     restarMemoria() {
         try {
             this.calc();
-            this.memoria = new Number(eval(this.memoria + " - " + new Number(this.vPantalla)));
+            this.memoria = new Number( eval(this.memoria+"-"+ this.vPantalla));
 
         } catch (err) {
             this.vPantalla = "Error: " + err;
@@ -65,7 +71,7 @@ class Calculadora {
     //MRC
     sacarMemoria() {
 
-        this.vPantalla = "" + this.memoria;
+        this.vPantalla = ""+this.memoria;
         document.getElementById('pantalla').value = this.vPantalla;
 
     }

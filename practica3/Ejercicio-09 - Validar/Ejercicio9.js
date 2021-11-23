@@ -85,7 +85,7 @@ class Meteo {
                 var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                 
                 var stringDatos = "<h3>Datos meteorológicos de " + ciudad2 + "</h3>";
-                    stringDatos += "<ul><li> <img src=\"https://openweathermap.org/img/w/"+icon  +".png\" alt =\""+ciudad+"\"> </li>";
+                    stringDatos += "<ul><li>  <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt =\""+ciudad+"\"> </li>";
                     stringDatos += "<li>Ciudad: " + ciudad2 + "</li>";
                     stringDatos += "<li>Longitud: " + longitud + " grados</li>";
                     stringDatos += "<li>Latitud: " + latitud + " grados</li>";
@@ -116,7 +116,7 @@ class Meteo {
                     document.querySelector("section").innerHTML+= stringDatos
                 },
                 error: function () {
-                    document.querySelector("section").append( "<p>Ciudad no encontrada</p>")
+                    document.querySelector("section").appendChild( "<p>Ciudad no encontrada</p>")
                 }
         });
     }

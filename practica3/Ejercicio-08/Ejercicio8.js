@@ -48,7 +48,7 @@ class Meteo {
 
                 //Presentación de los datos contenidos en JSON
 
-                var stringDatos = "<h3>"+ciudad+"</h3><ul><li> <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\"> </li>";
+                var stringDatos = "<h3>"+ciudad+"</h3><ul><li> <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt =\""+ciudad+"\"> </li>";
                 stringDatos += "<li>Ciudad: " + datos.name + "</li>";
                 stringDatos += "<li>País: " + datos.sys.country + "</li>";
                 stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";

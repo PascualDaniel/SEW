@@ -19,8 +19,8 @@ class Calculadora {
     }
     calc() {
         try {
-            //Solucion1
-            if (Number.isInteger(this.vPantalla)) {
+            var texto = this.vPantalla;
+            if(!isNaN(texto) && !isNaN(parseFloat(texto))) {
 
             }
             else {
@@ -83,7 +83,10 @@ class Calculadora {
                 if (token === '' && character === '-') {
                     token = '-';
                 } else {
-                    tokens.push(new Number(token), character);
+                    if(!isNaN(token) && !isNaN(parseFloat(token)))
+                        tokens.push(new Number(token), character);
+                    else
+                        tokens.push(token,character);
                     token = '';
                 }
             } else {
@@ -98,6 +101,28 @@ class Calculadora {
     }
 
 
+    tokenize(text) {
+        // --- Parse a calculation string into an array of numbers and operators
+        const tokens = [];
+        let token = '';
+        for (const character of text) {
+            if ('^*/+-'.indexOf(character) > -1) {
+                if (token === '' && character === '-') {
+                    token = '-';
+                } else {
+                    tokens.push(new Number(token), character);
+                    token = '';
+                }
+            } else {
+                token += character;
+            }
+        }
+        if (token !== '') {
+            tokens.push(new Number(token));
+        }
+        console.log(tokens);
+        return tokens;
+    }
     //on keyboardEvent call function
     onKeyPress(keyboardEvent) {
         //console.log(keyboardEvent.key);
@@ -200,54 +225,67 @@ class CalculadoraCientifica extends Calculadora {
         }
     }
     abs() {
+        this.calc();
         this.vPantalla = Math.abs(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     cos() {
+        this.calc();
         this.vPantalla = Math.cos(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     cosh() {
+        this.calc();
         this.vPantalla = Math.cosh(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     sen() {
-        this.vPantalla = Math.sin(eval(this.vPantalla));
+        this.calc();
+        this.vPantalla = Math.sin(this.vPantalla);
         document.getElementById('pantalla').value = this.vPantalla;
     }
     senh() {
-        this.vPantalla = Math.sinh(eval(this.vPantalla));
+        this.calc();
+        this.vPantalla = Math.sinh(this.vPantalla);
         document.getElementById('pantalla').value = this.vPantalla;
     }
     tan() {
+        this.calc();
         this.vPantalla = Math.tan(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     tanh() {
+        this.calc();
         this.vPantalla = Math.tanh(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     exp() {
+        this.calc();
         this.vPantalla = Math.exp(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     sqrt() {
+        this.calc();
         this.vPantalla = Math.sqrt(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     sqrt3() {
+        this.calc();
         this.vPantalla = Math.pow(eval(this.vPantalla), 1 / 3);
         document.getElementById('pantalla').value = this.vPantalla;
     }
     log() {
+        this.calc();
         this.vPantalla = Math.log10(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     log2() {
+        this.calc();
         this.vPantalla = Math.log2(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     ln() {
+        this.calc();
         this.vPantalla = Math.log(eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
@@ -268,14 +306,17 @@ class CalculadoraCientifica extends Calculadora {
         document.getElementById('pantalla').value = this.vPantalla;
     }
     elevare() {
+        this.calc();
         this.vPantalla = Math.pow(Math.E, eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     elevar2() {
+        this.calc();
         this.vPantalla = Math.pow(2, eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
     elevar10() {
+        this.calc();
         this.vPantalla = Math.pow(10, eval(this.vPantalla));
         document.getElementById('pantalla').value = this.vPantalla;
     }
@@ -289,19 +330,19 @@ class CalculadoraCientifica extends Calculadora {
     }
 
 
-
-
-
     tokenize(text) {
         // --- Parse a calculation string into an array of numbers and operators
         const tokens = [];
         let token = '';
         for (const character of text) {
-            if ('^*/+-()'.indexOf(character) > -1) {
+            if ('^*/+-'.indexOf(character) > -1) {
                 if (token === '' && character === '-') {
                     token = '-';
                 } else {
-                    tokens.push(new Number(token), character);
+                    if(!isNaN(token) && !isNaN(parseFloat(token)))
+                        tokens.push(new Number(token), character);
+                    else
+                        tokens.push(token,character);
                     token = '';
                 }
             } else {
@@ -314,6 +355,10 @@ class CalculadoraCientifica extends Calculadora {
         console.log(tokens);
         return tokens;
     }
+
+
+
+    
 
 }
 var calculadora = new CalculadoraCientifica();

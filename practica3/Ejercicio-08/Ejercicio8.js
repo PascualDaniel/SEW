@@ -34,6 +34,7 @@ class Meteo {
 
     getUrl(ciudad) {
         return "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
+   
     }
 
 

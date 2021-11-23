@@ -34,7 +34,7 @@ class Meteo {
 
     getUrl(ciudad){
         
-        return "http://api.openweathermap.org/data/2.5/weather?q=" + ciudad + this.tipo+ this.unidades + this.idioma + "&APPID=" + this.apikey;
+        return "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + this.tipo+ this.unidades + this.idioma + "&APPID=" + this.apikey;
     }
 
 
@@ -116,7 +116,7 @@ class Meteo {
                     document.querySelector("section").innerHTML+= stringDatos
                 },
                 error: function () {
-                    document.querySelector("section").append( "<p>Ciudad no encontrada</p>")
+                    document.querySelector("section").appendChild( "<p>Ciudad no encontrada</p>")
                 }
         });
     }

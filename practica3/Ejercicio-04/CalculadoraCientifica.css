@@ -4,7 +4,7 @@ body{
     background-color:rgb(255, 255, 255) ;
     color:black;
 }
-form{
+main{
     display: block;
     
     grid-template-columns: repeat(5, 1fr);
@@ -14,14 +14,14 @@ form{
     padding: 0.5em;
     max-width: 30em;
 }
-form p{
+main p{
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    
+    grid-gap: 1.5em;
 
 }
-form input[type="text"]{
+main input[type="text"]{
 
     width: 98%;
     min-height: 2em;
@@ -37,17 +37,20 @@ form input[type="text"]{
 
 }
 
-input[type="button"] {
- 
-    font-size:1em;
+main input[type="button"] {
+    height:3em;
+    width:3em;
+    cursor:pointer;
+    font-size:1.4em;
+    text-align: center;
+    
     background-color:rgb(226, 226, 226) ;
     color:black;
-    padding: 1em;
+
 }
-input[type="button"]:nth-child(-n+5) {
- 
-    font-size:1em;
+main input[type="button"]:nth-child(-n+5) {
+    
     background-color:rgb(179, 179, 179) ;
     color:black;
-    padding: 1em;
+ 
 }

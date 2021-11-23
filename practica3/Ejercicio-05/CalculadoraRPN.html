@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora  RPN</title>
+<link rel="stylesheet" href="Calculadora.css"/>
+<script src="Calculadora.js"></script>
+</head>
+<body>
+   
+    <h1>Calculadora de notación polaca inversa</h1>
+
+    <div id = "calculadora">
+        
+        <div id ="pantalla" >
+            <div id ="pila">
+                <p>0</p>
+
+            </div>
+            
+            <div id ="entrada">0</div>
+
+        </div>
+        <div id ="botones">
+        <p>
+            <input type="button" class ="bAzul" value="MC" onclick="calculadora.mlimpiar()">
+            <input type="button" class ="bAzul" value="MR" onclick="calculadora.msacar()">        
+            <input type="button" class ="bAzul" value="M+" onclick="calculadora.mmas()">       
+            <input type="button" class ="bAzul" value="M-" onclick="calculadora.mmenos()">      
+  
+      
+        </p>
+        <p>
+            <input type="button" class ="bGris" value="Sin" onclick="calculadora.sen()">
+            <input type="button" class ="bGris" value="Cos" onclick="calculadora.cos()">        
+            <input type="button" class ="bGris" value="Tan" onclick="calculadora.tan()">   
+            <input type="button" class ="bRojo" value="C" onclick="calculadora.limpiar()">  
+        </p>
+        <p>
+            <input type="button" class ="bGris" value="Sec" onclick="calculadora.senh()">    
+            <input type="button" class ="bGris" value="Csc" onclick="calculadora.cosh()">    
+            <input type="button" class ="bGris" value="Cot" onclick="calculadora.tanh()">  
+            <input type="button" class ="bRojo" value="CE" onclick="calculadora.ce()">   
+        </p>
+        
+   
+        <p>
+            <input type="button" class ="bGris" value="ln" onclick="calculadora.ln()">
+            <input type="button" class ="bGris" value="log" onclick="calculadora.log()">
+            <input type="button" class ="bGris" value="x^y" onclick="calculadora.pow()">
+            <input type="button" class ="bGris" value="sqrt" onclick="calculadora.sqrt()">
+        </p>
+        <p>
+            <input type="button" class ="bGris" value="e" onclick="calculadora.e()">   
+            <input type="button" class ="bGris" value="pi" onclick="calculadora.pi()"> 
+            <input type="button" class ="bGris" value="1/x" onclick="calculadora.multi()">       
+            <input type="button" class ="bGris" value="|x|" onclick="calculadora.abs()">    
+           
+        </p>
+        <p>
+           
+            <input type="button" class ="bBlanco" value="7" onclick="calculadora.addElement('7')">       
+            <input type="button" class ="bBlanco" value="8" onclick="calculadora.addElement('8')">    
+            <input type="button" class ="bBlanco" value="9" onclick="calculadora.addElement('9')">    
+            <input type="button" class ="bBlanco" value="*" onclick="calculadora.multi()">   
+        </p>
+        <p>
+        
+           
+            <input type="button" class ="bBlanco" value="4" onclick="calculadora.addElement('4')">       
+            <input type="button" class ="bBlanco" value="5" onclick="calculadora.addElement('5')">    
+            <input type="button" class ="bBlanco" value="6" onclick="calculadora.addElement('6')">    
+            <input type="button" class ="bBlanco" value="-" onclick="calculadora.resta()">   
+        </p>
+        <p>
+      
+           
+            <input type="button" class ="bBlanco" value="1" onclick="calculadora.addElement('1')">       
+            <input type="button" class ="bBlanco" value="2" onclick="calculadora.addElement('2')">    
+            <input type="button" class ="bBlanco" value="3" onclick="calculadora.addElement('3')">    
+            <input type="button" class ="bBlanco" value="+" onclick="calculadora.suma()">   
+        </p>
+        <p>     
+            <input type="button" class ="bBlanco" value="," onclick="calculadora.addElement('.')">        
+            <input type="button" class ="bBlanco" value="0" onclick="calculadora.addElement('0')">    
+            <input type="button" class ="bBlanco" value="/" onclick="calculadora.div()">    
+            <input type="button" class ="bAmarillo" value="enter" onclick="calculadora.enter()">   
+        </p>
+       
+
+    </div>
+    </div>
+</body>
+</html>

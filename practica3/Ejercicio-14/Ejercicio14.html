@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" href="Ejercicio14.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio número 14</h1>
+
+
+    </header>
+    <main>
+
+        <h2>Controles:</h2>
+        <section>
+            <label for="archivoTexto">Selección de una imagen: </label>
+            <input type="file" id="archivoTexto" accesskey="A" onchange="eje14.metodoBoton(this.files)"><br>
+            <p>
+                <input type="button" value="Invertir Imagen" accesskey="I"
+                 onclick="eje14.invertir()" draggable="true" ondragstart="eje14.drag(event)" >
+
+                <input type="button" value="Escala de Grises" accesskey="G" onclick="eje14.grises()"
+                onclick="eje14.grises()" draggable="true" ondragstart="eje14.drag2(event)" >
+
+                <input type="button" value="Imagen Normal" accesskey="N" onclick="eje14.original()"
+                onclick="eje14.original()" draggable="true" ondragstart="eje14.drag3(event)" >
+            </p>
+          
+        </section>
+        <h2>Imagen:</h2>
+        <section>
+            <canvas ondrop="eje14.drop(event)" ondragover="eje14.allowDrop(event)"></canvas>
+        </section>
+        <img src="" alt="Imagen cargada" hidden ></img>
+        
+    </main>
+    <footer>
+        <p>Por Daniel Pascual, UO269728</p>
+    </footer>
+
+
+</body>
+
+</html>

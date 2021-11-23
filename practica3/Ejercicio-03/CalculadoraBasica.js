@@ -99,8 +99,6 @@ class Calculadora {
         return tokens;
     }
 
-   
-
 
     //on keyboardEvent call function
     onKeyPress(keyboardEvent) {

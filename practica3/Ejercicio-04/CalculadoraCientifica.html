@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Calculadora  Simple</title>
-<link rel="stylesheet" href="CalculadoraCientifica.css"/>
-<script src="CalculadoraCientifica.js"></script>
-</head>
-<body>
-   
-    <h1>Calculadora Científica de Daniel Pascual</h1>
 
-    <form> 
-        <input id="pantalla" type="text" readonly  value="0">
-            <p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
+
+    <title>Calculadora Cientifica</title>
+    <link rel="stylesheet" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora Cientifica </h1>
+    </header>
+    <main>
+        <label for="pantalla" hidden> Pantalla de la calculadora </label>
+
+        <input id="pantalla" type="text" readonly value="0">
+        <p>
             <input type="button" value="MC" onclick="calculadora.limpiarMemoria()">
-            <input type="button" value="MR" onclick="calculadora.sacarMemoria()">        
-            <input type="button" value="M+" onclick="calculadora.sumarMemoria()">       
-            <input type="button" value="M-" onclick="calculadora.restarMemoria()">    
-            <input type="button" value="M*" onclick="calculadora.multMemoria()">    
-  
-      
-        
-            <input type="button"  value="Sin" onclick="calculadora.sen()">
-            <input type="button"  value="Cos" onclick="calculadora.cos()">        
-            <input type="button"  value="Tan" onclick="calculadora.tan()">   
-            <input type="button"  value="X^3" onclick="calculadora.exponente3()">   
-            <input type="button"  value="C" onclick="calculadora.limpiar()">  
-        
-            <input type="button"  value="Sec" onclick="calculadora.senh()">    
-            <input type="button"  value="Csc" onclick="calculadora.cosh()">    
-            <input type="button"  value="Cot" onclick="calculadora.tanh()">  
-            <input type="button"  value="x^2" onclick="calculadora.exponente2()">
-   
-            <input type="button"  value="CE" onclick="calculadora.ce()">   
-        
-            <input type="button"  value="ln" onclick="calculadora.ln()">
-            <input type="button"  value="log" onclick="calculadora.log()">
-            <input type="button"  value="10^x" onclick="calculadora.elevar10()">
-            <input type="button"  value="x^y" onclick="calculadora.exponentex()">
-            <input type="button"  value="raiz" onclick="calculadora.sqrt()">
-       
-            <input type="button"  value="e^x" onclick="calculadora.elevare()">   
-            <input type="button"  value="log2y" onclick="calculadora.log2()">  
-            <input type="button"  value="2^x" onclick="calculadora.elevar2()">   
-            <input type="button"  value="x^4" onclick="calculadora.exponente4()">  
-            <input type="button"  value="raiz3" onclick="limpiarMemoria()">  
-        
-            <input type="button"  value="1/x" onclick="calculadora.inversa()">       
-            <input type="button"  value="|x|" onclick="calculadora.abs()">    
-            <input type="button"  value="exp" onclick="calculadora.elevare()">    
-            <input type="button"  value="+/-" onclick="calculadora.negativo()">   
-            <input type="button"  value="/" onclick="calculadora.addElement('/')">   
-      
-            <input type="button"  value="n!" onclick="calculadora.fact()">    
-            <input type="button"  value="7" onclick="calculadora.addElement('7')">       
-            <input type="button"  value="8" onclick="calculadora.addElement('8')">    
-            <input type="button"  value="9" onclick="calculadora.addElement('9')">    
-            <input type="button"  value="*" onclick="calculadora.addElement('*')">   
-        
-        
-            <input type="button"  value="pi" onclick="calculadora.pi()">       
-            <input type="button"  value="4" onclick="calculadora.addElement('4')">       
-            <input type="button"  value="5" onclick="calculadora.addElement('5')">    
-            <input type="button"  value="6" onclick="calculadora.addElement('6')">    
-            <input type="button"  value="-" onclick="calculadora.addElement('-')">   
-       
-      
-            <input type="button"  value="e" onclick="calculadora.e()">   
-            <input type="button"  value="1" onclick="calculadora.addElement('1')">       
-            <input type="button"  value="2" onclick="calculadora.addElement('2')">    
-            <input type="button"  value="3" onclick="calculadora.addElement('3')">    
-            <input type="button"  value="+" onclick="calculadora.addElement('+')">   
-        
-            <input type="button"  value="(" onclick="calculadora.addElement('(')">
-            <input type="button"  value=")" onclick="calculadora.addElement(')')">             
-            <input type="button"  value="0" onclick="calculadora.addElement('0')">    
-            <input type="button"  value="," onclick="calculadora.addElement('.')">    
-            <input type="button"  value="=" onclick="calculadora.calc()">   
+            <input type="button" value="MR" onclick="calculadora.sacarMemoria()">
+            <input type="button" value="M+" onclick="calculadora.sumarMemoria()">
+            <input type="button" value="M-" onclick="calculadora.restarMemoria()">
+            <input type="button" value="M*" onclick="calculadora.multMemoria()">
+
+
+
+            <input type="button" value="Sin" onclick="calculadora.sen()">
+            <input type="button" value="Cos" onclick="calculadora.cos()">
+            <input type="button" value="Tan" onclick="calculadora.tan()">
+            <input type="button" value="X^3" onclick="calculadora.exponente3()">
+            <input type="button" value="C" onclick="calculadora.limpiar()">
+
+            <input type="button" value="Sec" onclick="calculadora.senh()">
+            <input type="button" value="Csc" onclick="calculadora.cosh()">
+            <input type="button" value="Cot" onclick="calculadora.tanh()">
+            <input type="button" value="x^2" onclick="calculadora.exponente2()">
+
+            <input type="button" value="CE" onclick="calculadora.ce()">
+
+            <input type="button" value="ln" onclick="calculadora.ln()">
+            <input type="button" value="log" onclick="calculadora.log()">
+            <input type="button" value="10^x" onclick="calculadora.elevar10()">
+            <input type="button" value="x^y" onclick="calculadora.exponentex()">
+            <input type="button" value="raiz" onclick="calculadora.sqrt()">
+
+            <input type="button" value="e^x" onclick="calculadora.elevare()">
+            <input type="button" value="log2y" onclick="calculadora.log2()">
+            <input type="button" value="2^x" onclick="calculadora.elevar2()">
+            <input type="button" value="x^4" onclick="calculadora.exponente4()">
+            <input type="button" value="raiz3" onclick="limpiarMemoria()">
+
+            <input type="button" value="1/x" onclick="calculadora.inversa()">
+            <input type="button" value="|x|" onclick="calculadora.abs()">
+            <input type="button" value="exp" onclick="calculadora.elevare()">
+            <input type="button" value="+/-" onclick="calculadora.negativo()">
+            <input type="button" value="/" onclick="calculadora.addElement('/')">
+
+            <input type="button" value="n!" onclick="calculadora.fact()">
+            <input type="button" value="7" onclick="calculadora.addElement('7')">
+            <input type="button" value="8" onclick="calculadora.addElement('8')">
+            <input type="button" value="9" onclick="calculadora.addElement('9')">
+            <input type="button" value="*" onclick="calculadora.addElement('*')">
+
+
+            <input type="button" value="pi" onclick="calculadora.pi()">
+            <input type="button" value="4" onclick="calculadora.addElement('4')">
+            <input type="button" value="5" onclick="calculadora.addElement('5')">
+            <input type="button" value="6" onclick="calculadora.addElement('6')">
+            <input type="button" value="-" onclick="calculadora.addElement('-')">
+
+
+            <input type="button" value="e" onclick="calculadora.e()">
+            <input type="button" value="1" onclick="calculadora.addElement('1')">
+            <input type="button" value="2" onclick="calculadora.addElement('2')">
+            <input type="button" value="3" onclick="calculadora.addElement('3')">
+            <input type="button" value="+" onclick="calculadora.addElement('+')">
+
+            <input type="button" value="(" onclick="calculadora.addElement('(')">
+            <input type="button" value=")" onclick="calculadora.addElement(')')">
+            <input type="button" value="0" onclick="calculadora.addElement('0')">
+            <input type="button" value="," onclick="calculadora.addElement('.')">
+            <input type="button" value="=" onclick="calculadora.calc()">
         </p>
-       
-        <form>  
+    </main>
+    <footer>
+        <p>Por Daniel Pascual, UO269728</p>
+    </footer>
+
 
 </body>
+
 </html>

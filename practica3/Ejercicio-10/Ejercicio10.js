@@ -37,7 +37,7 @@ class Bitcoin {
             this.dollars = this.dollars.replace('€', '');
             this.dollars = parseFloat(this.dollars);
             this.dollars = this.dollars / 0.88;
-            document.querySelector('main p').innerHTML = this.dollars + "$";
+            document.querySelector('main section p').innerHTML = this.dollars + "$";
             this.state = true;
         }
     }

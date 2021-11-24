@@ -16,6 +16,7 @@ class Bitcoin {
             if (xhr.readyState == 4 && xhr.status == 200) {
                 let response = JSON.parse(xhr.responseText);
                 document.querySelector('main p').innerHTML = response.bpi.USD.rate + "$";;
+                bit.state = false;
             }
         }
     }

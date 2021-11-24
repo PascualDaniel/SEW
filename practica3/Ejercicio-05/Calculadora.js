@@ -8,10 +8,10 @@ class Calculadora {
     }
 
     mmas(){
-        this.memoria +=  parseFloat(this.vPantalla);
+        this.memoria +=  new Number(this.vPantalla);
     }
     mmenos(){
-        this.memoria -=  parseFloat(this.vPantalla);
+        this.memoria -=  new Number(this.vPantalla);
     }
     mlimpiar(){
         this.memoria +=  0;
@@ -21,7 +21,7 @@ class Calculadora {
         this.vPantalla= this.memoria;
         this.escribiendo=true;
 
-        document.getElementById("entrada").innerText = this.vPantalla;
+        document.getElementById("pantalla").value = this.vPantalla;
     
     }
     addElement(elemento){
@@ -32,7 +32,7 @@ class Calculadora {
         else{
             this.vPantalla+=elemento;
         }
-        document.getElementById("entrada").innerText = this.vPantalla;
+        document.getElementById("pantalla").value = this.vPantalla;
     }
 
     enter(){
@@ -40,7 +40,7 @@ class Calculadora {
         this.refrescarPila();
         this.escribiendo=true;
         this.vPantalla="0";
-        document.getElementById("entrada").innerText = this.vPantalla;
+        document.getElementById("pantalla").value = this.vPantalla;
     }
     refrescarPila(){
         var elementosHtml ="";
@@ -48,52 +48,52 @@ class Calculadora {
         for(var i  in this.pila){
             elementosHtml +=("<p>"+this.pila[i]+"</p>");
         }
-        document.getElementById("pila").innerHTML = elementosHtml;
+        document.querySelector("div").innerHTML = elementosHtml;
     }
 
     suma(){
         if(this.pila.length>1){
-            var num = parseFloat(this.pila.pop());
-            var num2 = parseFloat(this.pila.pop());
+            var num = new Number(this.pila.pop());
+            var num2 = new Number(this.pila.pop());
             this.vPantalla= num + num2;
             this.refrescarPila();
         }
-        document.getElementById("entrada").innerText =this.vPantalla;
+        document.getElementById("pantalla").value =this.vPantalla;
     }
     resta(){
         if(this.pila.length>1){
-            var num = parseFloat(this.pila.pop());
-            var num2 = parseFloat(this.pila.pop());
+            var num = new Number(this.pila.pop());
+            var num2 = new Number(this.pila.pop());
             this.vPantalla= num - num2;
             this.refrescarPila();
         }
-        document.getElementById("entrada").innerText =this.vPantalla;
+        document.getElementById("pantalla").value =this.vPantalla;
     }
     multi(){
         if(this.pila.length>1){
-            var num = parseFloat(this.pila.pop());
-            var num2 = parseFloat(this.pila.pop());
+            var num = new Number(this.pila.pop());
+            var num2 = new Number(this.pila.pop());
             this.vPantalla= num * num2;
             this.refrescarPila();
         }
-        document.getElementById("entrada").innerText =this.vPantalla;
+        document.getElementById("pantalla").value =this.vPantalla;
     }
     div(){
         if(this.pila.length>1){
-            var num = parseFloat(this.pila.pop());
-            var num2 = parseFloat(this.pila.pop());
+            var num = new Number(this.pila.pop());
+            var num2 = new Number(this.pila.pop());
             this.vPantalla= num / num2;
             this.refrescarPila();
         }
-        document.getElementById("entrada").innerText =this.vPantalla;
+        document.getElementById("pantalla").value =this.vPantalla;
     }
     pow(){
         if(this.pila.length>0){
-            var num = parseFloat(this.pila.pop());
-            this.vPantalla=Math.pow( parseFloat(this.vPantalla), num ) ;
+            var num = new Number(this.pila.pop());
+            this.vPantalla=Math.pow( new Number(this.vPantalla), num ) ;
             this.refrescarPila();
         }
-        document.getElementById("entrada").innerText =this.vPantalla;
+        document.getElementById("pantalla").value =this.vPantalla;
     }
 
     limpiar(){
@@ -104,73 +104,73 @@ class Calculadora {
     ce(){
         this.escribiendo=true;
         this.vPantalla = "0";
-        document.getElementById('entrada').innerText = this.vPantalla;
+        document.getElementById('pantalla').value = this.vPantalla;
     }
 
     pi() {
         this.escribiendo=true;
         this.vPantalla = Math.PI;
-        document.getElementById('entrada').innerText = this.vPantalla;
+        document.getElementById('pantalla').value = this.vPantalla;
 
     }
     e() {
         this.escribiendo=true;
         this.vPantalla = Math.E;
-        document.getElementById('entrada').innerText = this.vPantalla;
+        document.getElementById('pantalla').value = this.vPantalla;
 
     }
 
     abs() {
-        this.vPantalla = Math.abs(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.abs(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     cos() {
-        this.vPantalla = Math.cos(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.cos(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     cosh() {
-        this.vPantalla = Math.cosh(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.cosh(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     sen() {
-        this.vPantalla = Math.sin(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.sin(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     senh() {
-        this.vPantalla = Math.sinh(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.sinh(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     tan() {
-        this.vPantalla = Math.tan(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.tan(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     tanh() {
-        this.vPantalla = Math.tanh(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.tanh(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     exp() {
-        this.vPantalla = Math.exp(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.exp(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     sqrt() {
         if(this.pila.length>0){
-        var num = parseFloat(this.pila.pop());
-        this.vPantalla = Math.sqrt(parseFloat(num));
+        var num = new Number(this.pila.pop());
+        this.vPantalla = Math.sqrt(new Number(num));
         this.refrescarPila();
-        document.getElementById('entrada').innerText = this.vPantalla;
+        document.getElementById('pantalla').value = this.vPantalla;
         }
     }
     log() {
-        this.vPantalla = Math.log10(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.log10(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     ln() {
-        this.vPantalla = Math.log(parseFloat(this.vPantalla));
-        document.getElementById('entrada').innerText = this.vPantalla;
+        this.vPantalla = Math.log(new Number(this.vPantalla));
+        document.getElementById('pantalla').value = this.vPantalla;
     }
     inversa() {
-        this.vPantalla = 1/parseFloat(this.vPantalla) ;
-        document.getElementById('pantalla').innerText = this.vPantalla;
+        this.vPantalla = 1/new Number(this.vPantalla) ;
+        document.getElementById('pantalla').value = this.vPantalla;
     }
 
  

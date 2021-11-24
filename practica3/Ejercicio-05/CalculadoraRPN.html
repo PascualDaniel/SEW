@@ -1,94 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Calculadora  RPN</title>
-<link rel="stylesheet" href="Calculadora.css"/>
-<script src="Calculadora.js"></script>
-</head>
-<body>
-   
-    <h1>Calculadora de notación polaca inversa</h1>
 
-    <div id = "calculadora">
-        
-        <div id ="pantalla" >
-            <div id ="pila">
-                <p>0</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora RPN</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
+    <link rel="stylesheet" href="Calculadora.css" />
+    <script src="Calculadora.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de notación polaca inversa</h1>
+    </header>
+
+
+    
+        <main>
+            <div >
+                <p></p>
 
             </div>
-            
-            <div id ="entrada">0</div>
 
-        </div>
-        <div id ="botones">
-        <p>
-            <input type="button" class ="bAzul" value="MC" onclick="calculadora.mlimpiar()">
-            <input type="button" class ="bAzul" value="MR" onclick="calculadora.msacar()">        
-            <input type="button" class ="bAzul" value="M+" onclick="calculadora.mmas()">       
-            <input type="button" class ="bAzul" value="M-" onclick="calculadora.mmenos()">      
+            <label for = "pantalla" hidden> Pantalla de la calculadora </label>
+            <input id="pantalla" type="text" readonly  value="0">
+
   
-      
-        </p>
-        <p>
-            <input type="button" class ="bGris" value="Sin" onclick="calculadora.sen()">
-            <input type="button" class ="bGris" value="Cos" onclick="calculadora.cos()">        
-            <input type="button" class ="bGris" value="Tan" onclick="calculadora.tan()">   
-            <input type="button" class ="bRojo" value="C" onclick="calculadora.limpiar()">  
-        </p>
-        <p>
-            <input type="button" class ="bGris" value="Sec" onclick="calculadora.senh()">    
-            <input type="button" class ="bGris" value="Csc" onclick="calculadora.cosh()">    
-            <input type="button" class ="bGris" value="Cot" onclick="calculadora.tanh()">  
-            <input type="button" class ="bRojo" value="CE" onclick="calculadora.ce()">   
-        </p>
-        
-   
-        <p>
-            <input type="button" class ="bGris" value="ln" onclick="calculadora.ln()">
-            <input type="button" class ="bGris" value="log" onclick="calculadora.log()">
-            <input type="button" class ="bGris" value="x^y" onclick="calculadora.pow()">
-            <input type="button" class ="bGris" value="sqrt" onclick="calculadora.sqrt()">
-        </p>
-        <p>
-            <input type="button" class ="bGris" value="e" onclick="calculadora.e()">   
-            <input type="button" class ="bGris" value="pi" onclick="calculadora.pi()"> 
-            <input type="button" class ="bGris" value="1/x" onclick="calculadora.multi()">       
-            <input type="button" class ="bGris" value="|x|" onclick="calculadora.abs()">    
-           
-        </p>
-        <p>
-           
-            <input type="button" class ="bBlanco" value="7" onclick="calculadora.addElement('7')">       
-            <input type="button" class ="bBlanco" value="8" onclick="calculadora.addElement('8')">    
-            <input type="button" class ="bBlanco" value="9" onclick="calculadora.addElement('9')">    
-            <input type="button" class ="bBlanco" value="*" onclick="calculadora.multi()">   
-        </p>
-        <p>
-        
-           
-            <input type="button" class ="bBlanco" value="4" onclick="calculadora.addElement('4')">       
-            <input type="button" class ="bBlanco" value="5" onclick="calculadora.addElement('5')">    
-            <input type="button" class ="bBlanco" value="6" onclick="calculadora.addElement('6')">    
-            <input type="button" class ="bBlanco" value="-" onclick="calculadora.resta()">   
-        </p>
-        <p>
-      
-           
-            <input type="button" class ="bBlanco" value="1" onclick="calculadora.addElement('1')">       
-            <input type="button" class ="bBlanco" value="2" onclick="calculadora.addElement('2')">    
-            <input type="button" class ="bBlanco" value="3" onclick="calculadora.addElement('3')">    
-            <input type="button" class ="bBlanco" value="+" onclick="calculadora.suma()">   
-        </p>
-        <p>     
-            <input type="button" class ="bBlanco" value="," onclick="calculadora.addElement('.')">        
-            <input type="button" class ="bBlanco" value="0" onclick="calculadora.addElement('0')">    
-            <input type="button" class ="bBlanco" value="/" onclick="calculadora.div()">    
-            <input type="button" class ="bAmarillo" value="enter" onclick="calculadora.enter()">   
-        </p>
-       
+            <p>
+                <input type="button"  value="MC" onclick="calculadora.mlimpiar()">
+                <input type="button"  value="MR" onclick="calculadora.msacar()">
+                <input type="button"  value="M+" onclick="calculadora.mmas()">
+                <input type="button"  value="M-" onclick="calculadora.mmenos()">
+                <input type="button"  value="Sin" onclick="calculadora.sen()">
+                <input type="button"  value="Cos" onclick="calculadora.cos()">
+                <input type="button"  value="Tan" onclick="calculadora.tan()">
+                <input type="button"  value="C" onclick="calculadora.limpiar()">
+ 
+                <input type="button"  value="Sec" onclick="calculadora.senh()">
+                <input type="button"  value="Csc" onclick="calculadora.cosh()">
+                <input type="button"  value="Cot" onclick="calculadora.tanh()">
+                <input type="button"  value="CE" onclick="calculadora.ce()">
 
-    </div>
-    </div>
+                <input type="button"  value="ln" onclick="calculadora.ln()">
+                <input type="button"  value="log" onclick="calculadora.log()">
+                <input type="button"  value="x^y" onclick="calculadora.pow()">
+                <input type="button"  value="sqrt" onclick="calculadora.sqrt()">
+  
+                <input type="button"  value="e" onclick="calculadora.e()">
+                <input type="button"  value="pi" onclick="calculadora.pi()">
+                <input type="button"  value="1/x" onclick="calculadora.multi()">
+                <input type="button"  value="|x|" onclick="calculadora.abs()">
+                <input type="button"  value="7" onclick="calculadora.addElement('7')">
+                <input type="button"  value="8" onclick="calculadora.addElement('8')">
+                <input type="button"  value="9" onclick="calculadora.addElement('9')">
+                <input type="button"  value="*" onclick="calculadora.multi()">
+                <input type="button"  value="4" onclick="calculadora.addElement('4')">
+                <input type="button"  value="5" onclick="calculadora.addElement('5')">
+                <input type="button"  value="6" onclick="calculadora.addElement('6')">
+                <input type="button"  value="-" onclick="calculadora.resta()">
+                <input type="button"  value="1" onclick="calculadora.addElement('1')">
+                <input type="button"  value="2" onclick="calculadora.addElement('2')">
+                <input type="button"  value="3" onclick="calculadora.addElement('3')">
+                <input type="button"  value="+" onclick="calculadora.suma()">
+
+                <input type="button"  value="," onclick="calculadora.addElement('.')">
+                <input type="button"  value="0" onclick="calculadora.addElement('0')">
+                <input type="button"  value="/" onclick="calculadora.div()">
+                <input type="button"  value="enter" onclick="calculadora.enter()">
+            </p>
+            </main>
+
+      
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+    <link rel="stylesheet" href="MapaKML.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <script src="MapaKML.js"></script>
+
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaLoader.initialize" async defer></script>
+    
+   
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 13</h1>
+    </header>
+    <main>
+        <p>
+            <label for="archivoTexto">Selección de archivo Kml:</label><br>
+            <input type="file" id="archivoTexto" accesskey="A" onchange="mapaLoader.cargar(this.files)">
+        </p>
+        <h2>Mapa: </h2>
+        <div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>

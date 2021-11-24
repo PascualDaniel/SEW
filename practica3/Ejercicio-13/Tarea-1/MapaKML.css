@@ -1,0 +1,45 @@
+body{
+    background-color:rgb(48, 47, 47) ;
+    color: black;
+}
+header{
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+
+p{
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin:auto auto 3% auto;
+    border: 3px solid rgb(0, 0, 0);
+
+}
+h1{
+    
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 5em;
+}
+h2{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 3em;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 80%;
+}

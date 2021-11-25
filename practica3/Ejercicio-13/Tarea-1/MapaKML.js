@@ -14,7 +14,7 @@ class Mapa {
             napTypeId: 'terrain',
             center: centro
         };
-        this.map = new google.maps.Map(document.querySelector("main div"), mapOptions);
+        this.map = new google.maps.Map(document.querySelector("main"), mapOptions);
 
 
     }

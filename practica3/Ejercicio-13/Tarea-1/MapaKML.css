@@ -1,6 +1,7 @@
 body{
     background-color:rgb(48, 47, 47) ;
     color: black;
+
 }
 header{
     flex-wrap: wrap;
@@ -19,6 +20,7 @@ p{
     border: 3px solid rgb(0, 0, 0);
 
 }
+
 h1{
     
     text-align: center;
@@ -36,10 +38,13 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
-main div {
+main {
+
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 500px;
     width: 80%;
+
+    
 }

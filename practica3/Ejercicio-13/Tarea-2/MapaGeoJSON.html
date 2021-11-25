@@ -4,35 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejercicio 13</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
     <link rel="stylesheet" href="MapaGeoJSON.css" />
-   
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="MapaGeoJSON.js"></script>
-    
-   
 
-   
-    
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaLoader.initialize"
+        async defer></script>
+
+
+
+
+
+
 </head>
 
 <body>
     <header>
-    <h1>Ejercicio 13</h1>      
+        <h1>Ejercicio 13</h1>
     </header>
+    <main>
+        <p>
+            <label for="archivoTexto">Selección de archivo GeoJson:</label><br>
+            <input type="file" id="archivoTexto" accesskey="A" onchange="mapaLoader.cargar(this.files)">
+        </p>
+        <h2>Mapa: </h2>
+        <div>
 
-    <div id="seleccion">
-        <label for="archivoTexto">Selección de archivo GeoJSON:</label><br>
-        <input type="file" id="archivoTexto" accesskey="A" onchange="mapaLoader.cargar(this.files)">
-    </div>
-
-  
-    
-    
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaLoader.initialize"></script>
-    <div id ="mapa">
-        
-    </div>
-
+        </div>
+    </main>
+    <footer>
+        <p>Por Daniel Pascual, UO269728</p>
+    </footer>
 </body>
 
 </html>

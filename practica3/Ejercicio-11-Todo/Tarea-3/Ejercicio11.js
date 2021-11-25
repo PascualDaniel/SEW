@@ -40,12 +40,12 @@ class MapaEstaticoGoogle {
         return this.altitud;
     }
     ver(){
-        this.verTodo("ubicacion");
-        this.getMapaEstaticoGoogle("Mapa");
+        this.verTodo();
+        this.getMapaEstaticoGoogle();
         
     }
-    verTodo(dondeVerlo){
-        var ubicacion=document.getElementById(dondeVerlo);
+    verTodo(){
+     
         var datos='<p>'+ this.mensaje + '</p>'; 
         datos+='<p>Longitud: '+this.longitud +' grados</p>'; 
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
@@ -54,10 +54,10 @@ class MapaEstaticoGoogle {
         datos+='<p>Precisión de la altitud: '+ this.precisionAltitud +' metros</p>'; 
         datos+='<p>Rumbo: '+ this.rumbo +' grados</p>'; 
         datos+='<p>Velocidad: '+ this.velocidad +' metros/segundo</p>';
-        ubicacion.innerHTML = datos;
+        document.querySelector("section").innerHTML = datos;
     }
-    getMapaEstaticoGoogle(dondeVerlo){
-        var ubicacion=document.getElementById(dondeVerlo);
+    getMapaEstaticoGoogle(){
+       
         
         var apiKey = "&key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU";
         //URL: obligatoriamente https
@@ -83,7 +83,7 @@ class MapaEstaticoGoogle {
         var sensor = "&sensor=false"; 
         
         this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
-        ubicacion.innerHTML = "<img src='"+this.imagenMapa+"'/>";
+        document.querySelector("main").innerHTML =  "<img alt='mapa' src='"+this.imagenMapa+"'/>";
     }
 }
 var miMapa = new MapaEstaticoGoogle();

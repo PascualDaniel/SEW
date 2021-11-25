@@ -1,14 +1,16 @@
-/* CalculadoraBasica.css */
-/* Version 1.0. 29/10/2020. Daniel Pascual Lopez. Universidad de Oviedo */
 body{
     background-color:rgb(48, 47, 47) ;
     color: black;
+
 }
 header{
     flex-wrap: wrap;
     text-align: center;
 
+
 }
+
+
 h1{
     
     text-align: center;
@@ -16,14 +18,41 @@ h1{
     background-color: whitesmoke;
     font-size: 5em;
 }
-#ubicacion{
-   
-        background-color: whitesmoke;
-        color: black;
-        text-align: left;
-        width: 80%;
-        height: auto;
-        margin:auto;
-        border: 3px solid rgb(0, 0, 0);
+h2{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 3em;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+main {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 80%;
+
     
+}
+section{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+    background-color: whitesmoke;
+}
+section p{
+    padding: 1em;
+    font-size: 1em;
 }

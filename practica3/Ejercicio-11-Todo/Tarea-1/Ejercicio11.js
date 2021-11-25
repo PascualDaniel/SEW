@@ -35,7 +35,7 @@ class Geolocalizacion {
         datos+='<p>Precisión de la altitud: '+ this.precisionAltitud +' metros</p>'; 
         datos+='<p>Rumbo: '+ this.rumbo +' grados</p>'; 
         datos+='<p>Velocidad: '+ this.velocidad +' metros/segundo</p>';
-        $("#ubicacion").append(datos);
+        document.querySelector("section").innerHTML = datos;
 
 
     }

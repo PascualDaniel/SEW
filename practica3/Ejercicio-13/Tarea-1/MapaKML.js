@@ -42,7 +42,6 @@ class Mapa {
                 var name = $(placeMarks[placeMark]).find("name").text();
                 var latitud = parseFloat(CoordenadasParseadas[1]);
                 var longitud = parseFloat(CoordenadasParseadas[0]);
-
                 var myLatLng = { lat: latitud, lng: longitud };
                 
                 var punto = new google.maps.Marker({

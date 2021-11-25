@@ -25,7 +25,7 @@ class Geolocalizacion {
     }
 
     ver() {
-        $("#ubicacion").empty();
+
         var datos = "";
         datos += "<p>Longitud: " + this.longitud + " grados</p>";
         datos+='<p>Latitud: '+this.latitud +' grados</p>';
@@ -34,23 +34,23 @@ class Geolocalizacion {
         datos+='<p>Precisión de la altitud: '+ this.precisionAltitud +' metros</p>'; 
         datos+='<p>Rumbo: '+ this.rumbo +' grados</p>'; 
         datos+='<p>Velocidad: '+ this.velocidad +' metros/segundo</p>';
-        $("#ubicacion").append(datos);
+        document.querySelector("section").innerHTML = datos;
 
 
     }
     verErrores(error){
         switch(error.code) {
         case error.PERMISSION_DENIED:
-             $("#ubicacion").append( "El usuario no permite la petición de geolocalización</p>");
+            document.querySelector("section").innerHTML = "<p>El usuario no permite la petición de geolocalización</p>";
             break;
         case error.POSITION_UNAVAILABLE:
-            $("#ubicacion").append( "Información de geolocalización no disponible</p>");
+            document.querySelector("section").innerHTML = "<p>Información de geolocalización no disponible</p>";
             break;
         case error.TIMEOUT:
-            $("#ubicacion").append( "La petición de geolocalización ha caducado</p>");
+            document.querySelector("section").innerHTML = "<p>La petición de geolocalización ha caducado</p>";
             break;
         case error.UNKNOWN_ERROR:
-            $("#ubicacion").append( "Se ha producido un error desconocido</p>");
+            document.querySelector("section").innerHTML = "<p>Se ha producido un error desconocido</p>";
             break;
         }
     }

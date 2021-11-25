@@ -21,84 +21,42 @@ class Mapa {
             center: centro
         };
         this.map = new google.maps.Map(document.querySelector('main'), mapOptions);
-
-
     }
 
-   //load a geojson file and add its points to the map
-   cargarGeoJSON(file) {
-    var archivo = file[0];
-    var lector = new FileReader();
-    lector.readAsText(archivo);
-    lector.onloadend = (event) => {
-        var contenido = event.target.result;
-        var geoJson = JSON.parse(contenido);
-        var features = geoJson.features;
-        this.info = new google.maps.InfoWindow();
-        for (var i = 0; i < features.length; i++) {
-            var feature = features[i];
-            var propiedades = feature.properties;
-            
-            var coordenadas = feature.geometry.coordinates;
-            
-            var punto = coordenadas[0];
-            var latitud = punto[1];
-            var longitud = punto[0];
-            var latlng = new google.maps.LatLng(latitud, longitud);
-            var marcador = new google.maps.Marker({
-                position: latlng,
-                map: mapaLoader.map,
-                title: propiedades.name
-            });
-            console.log(marcador);
-            marcador.setMap(mapaLoader.map);
-
-           
-        }
-    }
-}
-    cargar(file) {
+    //load a geojson file and add its points to the map
+    cargarGeoJSON(file) {
         var archivo = file[0];
-
         var lector = new FileReader();
-
-
-        lector.onload = function (evento) {
-
-        }
         lector.readAsText(archivo);
-        var mapaLocal = this.map;
-        lector.onloadend = function () {
-            var jsonData = JSON.parse(lector.result);
+        lector.onloadend = (event) => {
+            var contenido = event.target.result;
+            var geoJson = JSON.parse(contenido);
+            var features = geoJson.features;
+            this.info = new google.maps.InfoWindow();
+            for (var i = 0; i < features.length; i++) {
+                var feature = features[i];
+                var propiedades = feature.properties;
+                var name = propiedades.name;
+                var coordenadas = feature.geometry.coordinates;
 
-            for (var i = 0; i < jsonData.features.length; i++) {
-                var coordenadas = jsonData.features[i].geometry.coordinates;
-                const CoordenadasLinea = [];
 
-                for (var j = 0; j < coordenadas.length; j++) {
-                    var punto = new Object();
-                    punto.lat = parseFloat(coordenadas[j][1]);
-                    punto.lng = parseFloat(coordenadas[j][0]);
-                    CoordenadasLinea.push(punto);
-                }
-                const lineas = new google.maps.Polyline({
-                    path: CoordenadasLinea,
-                    geodesic: true,
-                    strokeColor: "#FF0000",
-                    strokeOpacity: 1.0,
-                    strokeWheight: 2,
-                    map: mapaLocal
-
+                var latitud = parseFloat(coordenadas[1]);
+                var longitud = parseFloat(coordenadas[0]);
+                var myLatLng = { lat: latitud, lng: longitud };
+                console.log(myLatLng);
+                var marcador = new google.maps.Marker({
+                    position: myLatLng,
+                    map: mapaLoader.map,
+                    title: name,
                 });
-                lineas.setMap(mapaLocal)
+
+                marcador.setMap(mapaLoader.map);
+
+
             }
-
-
-        };
-
-
-
+        }
     }
+
 }
 
 var mapaLoader = new Mapa();

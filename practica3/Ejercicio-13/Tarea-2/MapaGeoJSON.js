@@ -20,12 +20,43 @@ class Mapa {
             napTypeId: 'terrain',
             center: centro
         };
-        this.map = new google.maps.Map(document.querySelector('div'), mapOptions);
+        this.map = new google.maps.Map(document.querySelector('main'), mapOptions);
 
 
     }
 
+   //load a geojson file and add its points to the map
+   cargarGeoJSON(file) {
+    var archivo = file[0];
+    var lector = new FileReader();
+    lector.readAsText(archivo);
+    lector.onloadend = (event) => {
+        var contenido = event.target.result;
+        var geoJson = JSON.parse(contenido);
+        var features = geoJson.features;
+        this.info = new google.maps.InfoWindow();
+        for (var i = 0; i < features.length; i++) {
+            var feature = features[i];
+            var propiedades = feature.properties;
+            
+            var coordenadas = feature.geometry.coordinates;
+            
+            var punto = coordenadas[0];
+            var latitud = punto[1];
+            var longitud = punto[0];
+            var latlng = new google.maps.LatLng(latitud, longitud);
+            var marcador = new google.maps.Marker({
+                position: latlng,
+                map: mapaLoader.map,
+                title: propiedades.name
+            });
+            console.log(marcador);
+            marcador.setMap(mapaLoader.map);
 
+           
+        }
+    }
+}
     cargar(file) {
         var archivo = file[0];
 

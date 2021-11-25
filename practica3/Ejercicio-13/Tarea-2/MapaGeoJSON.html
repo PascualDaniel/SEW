@@ -26,19 +26,13 @@
     <header>
         <h1>Ejercicio 13</h1>
     </header>
+    <p>
+        <label for="archivoTexto">Selección de archivo GeoJSON:</label><br>
+        <input type="file" id="archivoTexto" accesskey="A" onchange="mapaLoader.cargarGeoJSON(this.files)">
+    </p>
+    <h2>Mapa: </h2>
     <main>
-        <p>
-            <label for="archivoTexto">Selección de archivo GeoJson:</label><br>
-            <input type="file" id="archivoTexto" accesskey="A" onchange="mapaLoader.cargar(this.files)">
-        </p>
-        <h2>Mapa: </h2>
-        <div>
-
-        </div>
     </main>
-    <footer>
-        <p>Por Daniel Pascual, UO269728</p>
-    </footer>
 </body>
 
 </html>

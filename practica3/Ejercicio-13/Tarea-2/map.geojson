@@ -1,0 +1,383 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.1872,
+                    43.3849108,
+                    40
+                ]
+            },
+            "properties": {
+                "name": "Arriondas"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.49423,
+                    42.51201,
+                    360
+                ]
+            },
+            "properties": {
+                "name": "Monforte"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.49423,
+                    42.51201,
+                    360
+                ]
+            },
+            "properties": {
+                "name": "Monforte"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.49423,
+                    42.51201,
+                    360
+                ]
+            },
+            "properties": {
+                "name": "Monforte"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.22275,
+                    43.4883,
+                    15
+                ]
+            },
+            "properties": {
+                "name": "Ferrol"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.49423,
+                    42.51201,
+                    360
+                ]
+            },
+            "properties": {
+                "name": "Monforte"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.49423,
+                    42.51201,
+                    360
+                ]
+            },
+            "properties": {
+                "name": "Monforte"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.06545,
+                    43.34657731,
+                    80
+                ]
+            },
+            "properties": {
+                "name": "Corao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.06545,
+                    43.34657731,
+                    80
+                ]
+            },
+            "properties": {
+                "name": "Corao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.06545,
+                    43.34657731,
+                    80
+                ]
+            },
+            "properties": {
+                "name": "Corao"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.8555264,
+                    43.3639746,
+                    232
+                ]
+            },
+            "properties": {
+                "name": "Oviedo"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.8555264,
+                    43.3639746,
+                    232
+                ]
+            },
+            "properties": {
+                "name": "Oviedo"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.8555264,
+                    43.3639746,
+                    232
+                ]
+            },
+            "properties": {
+                "name": "Oviedo"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "?"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.150874,
+                    43.36623576,
+                    69
+                ]
+            },
+            "properties": {
+                "name": "Villanueva"
+            }
+        }
+    ]
+}

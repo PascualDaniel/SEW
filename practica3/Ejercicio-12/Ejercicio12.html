@@ -3,33 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
     <title>Ejercicio 12</title>
     <link rel="stylesheet" href="Ejercicio12.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="Ejercicio12.js"></script>
-    
+
 </head>
 
 <body>
     <header>
-    <h1>Ejercicio 12</h1>      
+        <h1>Ejercicio 12</h1>
     </header>
 
-    <div id="seleccion">
+    <p>
         <label for="archivoTexto">Selección de un txt, json o xml: </label><br>
-        <input type="file" id="archivoTexto" accesskey="A"  onchange="car.metodo(this.files);">
-    </div>
-    
-      
-    <div id ="datos">
+        <input type="file" id="archivoTexto" accesskey="A" onchange="car.metodo(this.files);">
+    </p>
 
-        <p id ="name"> Nombre del archivo:</p> 
-        <p id ="size"> Tamaño del archivo:</p> 
-        <p id ="type"> Tipo del archivo:</p> 
-        <p id ="date"> Fecha de la última modificación:</p> 
-        <p id ="contentName">  Contenido del archivo de texto: </p> 
-        <pre id = "contenido" ></pre>
-    </div>
+
+    <main>
+        <main>
+            <p>Nombre del archivo: </p>
+            <p>Tamaño del archivo: </p>
+            <p>Tipo del archivo: </p>
+            <p>Fecha de la última modificación:</p>
+            <p>Contenido del archivo de texto:</p>
+            <pre> hola </pre>
+        </main>
+
+
+    </main>
 
 </body>
 

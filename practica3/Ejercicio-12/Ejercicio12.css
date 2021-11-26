@@ -16,7 +16,7 @@ h1{
     background-color: whitesmoke;
     font-size: 5em;
 }
-#datos{
+main{
 
     background-color:rgb(218, 218, 218) ;
     color: black;
@@ -24,17 +24,24 @@ h1{
     width: 80%;
     height: auto;
     margin:auto auto 3% auto;
+    padding: 1em;
 
 }
-#datos p{
+main p{
     padding: 1%;
+    margin: auto;
 
 }
-#dato pre{
-    padding: 1%;
-    margin-left: 3%;
+main pre{
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(0, 0, 0);
+
 }
-#seleccion{
+
+body p{
     background-color: whitesmoke;
     color: black;
     text-align: center;

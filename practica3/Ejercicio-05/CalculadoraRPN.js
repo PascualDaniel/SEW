@@ -44,11 +44,11 @@ class Calculadora {
     }
     refrescarPila(){
         var elementosHtml ="";
-        elementosHtml +=("<p>"+0+"</p>");
+        elementosHtml +=("<li>"+0+"</li>");
         for(var i  in this.pila){
-            elementosHtml +=("<p>"+this.pila[i]+"</p>");
+            elementosHtml +=("<li>"+this.pila[i]+"</li>");
         }
-        document.querySelector("div").innerHTML = elementosHtml;
+        document.querySelector("ul").innerHTML = elementosHtml;
     }
 
     suma(){

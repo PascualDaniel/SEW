@@ -25,21 +25,23 @@ main input[type="text"]{
     background-color: rgb(169, 211, 168);
     color:black;
     overflow: hidden;
-    margin-top: 0.5em;
     margin-bottom: 1em;
 
 }
 main p{
+    width: 80%;
     margin: 1.5em;
     display: grid;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
 }
-main div{
+main ul{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
 
     text-align: right;
     align-self: center;
@@ -48,13 +50,15 @@ main div{
     background-color: rgb(169, 211, 168);
     color:black;
     overflow: hidden;
-    margin-top: 0.5em;
-
+    margin-top: 1em;
+    list-style-type: none;
 }
-main div p{
+
+main ul li{
     text-align: right;
     padding: 0.1em;
     display: block;
+    list-style-type: none;
 }
 
 input[type="button"] {

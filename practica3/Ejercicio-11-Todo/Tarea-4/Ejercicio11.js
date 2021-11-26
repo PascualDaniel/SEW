@@ -1,6 +1,6 @@
 
 "use strict";
-class MapaEstaticoGoogle {
+class MapaGoogle {
     constructor() {
         this.info;
         this.map;
@@ -15,10 +15,10 @@ class MapaEstaticoGoogle {
            napTypeId: 'terrain',
            center:centro
        };
-       this.map = new google.maps.Map(document.getElementById('Mapa'), mapOptions);
+       this.map = new google.maps.Map(document.querySelector("main"), mapOptions);
        this.marcador = new google.maps.Marker({position:centro,map:this.map});
        
    }
     
 }
-var miMapa = new MapaEstaticoGoogle();
+var miMapa = new MapaGoogle();

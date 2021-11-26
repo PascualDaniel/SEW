@@ -3,61 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
     <title>Ejercicio 11</title>
     <link rel="stylesheet" href="Ejercicio11.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="Ejercicio11.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=miMapa.getMapaEstaticoGoogle"
+        async defer></script>
 
 </head>
 
 <body>
     <header>
         <h1>Kebabs del Centro de Oviedo</h1>
-
     </header>
-    <div id="datos">
-        <ul>
-            <li>Kebab kebabish
-                <ul>
-                    <li>Nota : 7/10</li>
-                    <li>Opción Vegana: Si</li>
-                </ul>
-            </li>
-            <li>Kebab Anapurna
-                <ul>
-                    <li>Nota : 10/10</li>
-                    <li>Opción Vegana: Si</li>
-                </ul>
-            </li>
-            <li>Kebab auténtico
-                <ul>
-                    <li>Nota : 8/10</li>
-                    <li>Opción Vegana: Si</li>
-                </ul>
-            </li>
-            <li>Kebab auténtico de verdad
-                <ul>
-                    <li>Nota : 3/10</li>
-                    <li>Opción Vegana: No</li>
-                </ul>
-            </li>
-            <li>Kebab ASTUR DONNER
-                <ul>
-                    <li>Nota : 6/10</li>
-                    <li>Opción Vegana: Si</li>
-                </ul>
-            </li>
+    <h2>Lista de kebaps</h2>
+   <section>
+    <ul>
+        <li>Kebab kebabish
+            <ul>
+                <li>Nota : 7/10</li>
+                <li>Opción Vegana: Si</li>
+            </ul>
+        </li>
+        <li>Kebab Anapurna
+            <ul>
+                <li>Nota : 10/10</li>
+                <li>Opción Vegana: Si</li>
+            </ul>
+        </li>
+        <li>Kebab auténtico
+            <ul>
+                <li>Nota : 8/10</li>
+                <li>Opción Vegana: Si</li>
+            </ul>
+        </li>
+        <li>Kebab auténtico de verdad
+            <ul>
+                <li>Nota : 3/10</li>
+                <li>Opción Vegana: No</li>
+            </ul>
+        </li>
+        <li>Kebab ASTUR DONNER
+            <ul>
+                <li>Nota : 6/10</li>
+                <li>Opción Vegana: Si</li>
+            </ul>
+        </li>
 
 
 
-        </ul>
-    </div>
-    <div id="botonera">
-        <input type="button" accesskey="o" value="Obtener mapa estático" onClick="miMapa.getMapaEstaticoGoogle('ubicacion');" />
-    </div>
-
-    <div id="ubicacion">
-    </div>
+    </ul>
+    </section>
+    <h2>Mapa de los kebaps:</h2>
+    <main>
+    </main>
 
 </body>
 

@@ -1,14 +1,16 @@
-/* CalculadoraBasica.css */
-/* Version 1.0. 29/10/2020. Daniel Pascual Lopez. Universidad de Oviedo */
 body{
     background-color:rgb(48, 47, 47) ;
-    color:black;
+    color: black;
+
 }
 header{
     flex-wrap: wrap;
     text-align: center;
 
+
 }
+
+
 h1{
     
     text-align: center;
@@ -16,40 +18,44 @@ h1{
     background-color: whitesmoke;
     font-size: 5em;
 }
-
-#datos{
-    background-color: whitesmoke;
-    color: black;
-    text-align: left;
-    width: 80%;
-    height: auto;
-    margin:auto;
-    border: 3px solid rgb(0, 0, 0);
-}
-#botonera{
-    background-color: whitesmoke;
-    color: black;
+h2{
     text-align: center;
-    width: 50%;
-    display: block;
-    margin:auto auto 3% auto;
-    border: 3px solid rgb(0, 0, 0);
-}
-#ubicacion{
-   
-    background-color: whitesmoke;
     color: black;
-    text-align: left;
-    width: 70%;
-    height: auto;
-    margin:auto;
-    border: 3px solid rgb(0, 0, 0);
-
+    background-color: whitesmoke;
+    font-size: 3em;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-#ubicacion img{
-   
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+main {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+
     
+}
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     height: auto;
-
+}
+section{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+    background-color: whitesmoke;
 }

@@ -4,7 +4,7 @@ class MapaEstaticoGoogle {
     constructor() {
         this.mensaje = "Se ha realizado correctamente la petición de geolocalización";
         this.getKebabs();
-        this.getMapaEstaticoGoogle();
+
     }
     getKebabs() {
         //centro mapa oviedo    43.3610796, -5.8474587
@@ -24,22 +24,7 @@ class MapaEstaticoGoogle {
 
 
     }
-    verErrores(error) {
-        switch (error.code) {
-            case error.PERMISSION_DENIED:
-                this.mensaje = "El usuario no permite la petición de geolocalización"
-                break;
-            case error.POSITION_UNAVAILABLE:
-                this.mensaje = "Información de geolocalización no disponible"
-                break;
-            case error.TIMEOUT:
-                this.mensaje = "La petición de geolocalización ha caducado"
-                break;
-            case error.UNKNOWN_ERROR:
-                this.mensaje = "Se ha producido un error desconocido"
-                break;
-        }
-    }
+
     getMapaEstaticoGoogle() {
 
 
@@ -61,7 +46,7 @@ class MapaEstaticoGoogle {
         var sensor = "&sensor=false";
 
         this.imagenMapa = url + centro + zoom + tamaño + marcador + sensor + apiKey;
-        $("#ubicacion").append("<img src='" + this.imagenMapa + "'/>")
+        document.querySelector("main").innerHTML =  "<img alt='mapa' src='" + this.imagenMapa + "'/>";
 
     }
 }

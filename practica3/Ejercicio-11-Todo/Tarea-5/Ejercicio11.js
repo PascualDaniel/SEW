@@ -1,6 +1,6 @@
 
 "use strict";
-class MapaEstaticoGoogle {
+class MapaGoogle {
     constructor() {
 
         this.info;
@@ -16,7 +16,7 @@ class MapaEstaticoGoogle {
             napTypeId: 'terrain',
             center: centro
         };
-        this.map = new google.maps.Map(document.getElementById('Mapa'), mapOptions);
+        this.map = new google.maps.Map( document.querySelector("main"), mapOptions);
       
     }
     getPosicion(posicion) {
@@ -55,10 +55,15 @@ class MapaEstaticoGoogle {
         }
     }
     centrar() {
-        var pos = new google.maps.LatLng(this.latitud, this.longitud);
-        this.marcador = new google.maps.Marker({ position: pos, map: this.map });
-        this.map.panTo(pos);
+        try {
+            var pos = new google.maps.LatLng(this.latitud, this.longitud);
+            this.marcador = new google.maps.Marker({ position: pos, map: this.map });
+            this.map.panTo(pos);
+        } catch (error) {
+            this.verErrores(error);
+        }
+       
 
     }
 }
-var miMapa = new MapaEstaticoGoogle();
+var miMapa = new MapaGoogle();

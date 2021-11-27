@@ -68,10 +68,10 @@ class Meteo {
                 stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
                 stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
 
-                document.querySelector("section").innerHTML+= stringDatos
+                document.querySelector("main").innerHTML+= stringDatos
             },
             error: function () {
-                document.querySelector("section").appendChild( "<p>Ciudad no encontrada</p>")
+                document.querySelector("main").appendChild( "<p>Ciudad no encontrada</p>")
             }
         });
  

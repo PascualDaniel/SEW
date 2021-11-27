@@ -5,6 +5,11 @@ class Calculadora {
     	this.vPantalla = "0";//valor de la pantalla actual
         this.escribiendo=true;
         this.memoria=0;
+
+        
+        document.addEventListener("keypress", function (e) {
+            calculadora.onKeyPress(e);
+        });
     }
 
     mmas(){
@@ -174,7 +179,95 @@ class Calculadora {
     }
 
  
-
+    onKeyPress(keyboardEvent) {
+        //console.log(keyboardEvent.key);
+        switch (keyboardEvent.key) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '.':
+                this.addElement(keyboardEvent.key);
+                break;
+            case '+':
+                this.suma();
+                break;
+            case '-':
+                this.resta();
+                break;
+            case '*':
+                this.multi();
+                break;
+            case '/':
+                this.div();
+                break;
+            case '^':
+                this.pow();
+                break;
+            case 'C':
+                this.ce();
+                break;
+            case 'p':
+                this.pi();
+                break;
+            case 'e':
+                this.e();
+                break;
+            case 'a':
+                this.abs();
+                break;
+            case 'c':
+                this.cos();
+                break;
+            case 'C':
+                this.cosh();
+                break;
+            case 's':
+                this.sen();
+                break;
+            case 'S':
+                this.senh();
+                break;
+            case 't':
+                this.tan();
+                break;
+            case 'T':
+                this.tanh();
+                break;
+            case 'x':
+                this.exp();
+                break;
+            case 's':
+                this.sqrt();
+                break;
+            case 'l':
+                this.log();
+                break;
+            case 'L':
+                this.ln();
+                break;
+            case 'i':
+                this.inversa();
+                break;
+            case 'Enter':
+                this.igual();
+                break;
+            case ',':
+                this.addElement(keyboardEvent.key);
+                break;
+            case 'Backspace':
+                this.backspace();
+                break;
+            default:
+                break;
+        }
+    }
    
 
 }

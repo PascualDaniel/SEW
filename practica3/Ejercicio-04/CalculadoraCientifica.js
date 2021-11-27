@@ -150,6 +150,17 @@ class CalculadoraCientifica extends Calculadora {
     constructor() {
         super();
     }
+
+    multMemoria() {
+        try {
+            this.calc();
+            this.memoria = new Number(eval(this.memoria + "*" + this.vPantalla));
+
+        } catch (err) {
+            this.vPantalla = "Error: " + err;
+            document.getElementById('pantalla').value = this.vPantalla;
+        }
+    }
     ce() {
         try {
             if (this.vPantalla.length == 1) {
@@ -332,7 +343,6 @@ class CalculadoraCientifica extends Calculadora {
         console.log(tokens);
         return tokens;
     }
-
     onKeyPress(keyboardEvent) {
         //console.log(keyboardEvent.key);
         switch (keyboardEvent.key) {
@@ -447,7 +457,9 @@ class CalculadoraCientifica extends Calculadora {
             case 'w':
                 this.log2();
                 break;
-
+            case 'x':
+                this.multMemoria();
+                break;
             default:
                 break;
         }

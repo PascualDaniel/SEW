@@ -1,5 +1,4 @@
-/* CalculadoraBasica.css */
-/* Version 1.0. 29/10/2020. Daniel Pascual Lopez. Universidad de Oviedo */
+
 body{
     background-color:rgb(255, 255, 255) ;
     color:black;
@@ -30,12 +29,21 @@ main input[type="text"]:nth-child(2){
     margin-bottom: 1em;
 
 }
+
+
 main p{
     margin: 1.5em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
 }
+@media screen and (max-width: 600px) {
+    main p{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+
 input[type="button"] {
     height:3em;
     width:3em;

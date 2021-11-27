@@ -55,7 +55,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num + num2;
+            this.pila.push(num + num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -64,7 +64,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num - num2;
+            this.pila.push(num - num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -73,7 +73,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num * num2;
+            this.pila.push(num * num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -82,7 +82,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num / num2;
+            this.pila.push(num / num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;

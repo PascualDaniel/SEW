@@ -20,7 +20,7 @@ class Calculadora {
     calc() {
         try {
             var texto = this.vPantalla;
-            if(!isNaN(texto) && !isNaN(parseFloat(texto))) {
+            if (!isNaN(texto) && !isNaN(parseFloat(texto))) {
 
             }
             else {
@@ -83,33 +83,6 @@ class Calculadora {
                 if (token === '' && character === '-') {
                     token = '-';
                 } else {
-                    if(!isNaN(token) && !isNaN(parseFloat(token)))
-                        tokens.push(new Number(token), character);
-                    else
-                        tokens.push(token,character);
-                    token = '';
-                }
-            } else {
-                token += character;
-            }
-        }
-        if (token !== '') {
-            tokens.push(new Number(token));
-        }
-        console.log(tokens);
-        return tokens;
-    }
-
-
-    tokenize(text) {
-        // --- Parse a calculation string into an array of numbers and operators
-        const tokens = [];
-        let token = '';
-        for (const character of text) {
-            if ('^*/+-'.indexOf(character) > -1) {
-                if (token === '' && character === '-') {
-                    token = '-';
-                } else {
                     tokens.push(new Number(token), character);
                     token = '';
                 }
@@ -123,6 +96,9 @@ class Calculadora {
         console.log(tokens);
         return tokens;
     }
+
+
+
     //on keyboardEvent call function
     onKeyPress(keyboardEvent) {
         //console.log(keyboardEvent.key);
@@ -335,14 +311,15 @@ class CalculadoraCientifica extends Calculadora {
         const tokens = [];
         let token = '';
         for (const character of text) {
-            if ('^*/+-'.indexOf(character) > -1) {
+            if ('^*/+-()'.indexOf(character) > -1) {
+
                 if (token === '' && character === '-') {
                     token = '-';
                 } else {
-                    if(!isNaN(token) && !isNaN(parseFloat(token)))
+                    if (!isNaN(token) && !isNaN(parseFloat(token)))
                         tokens.push(new Number(token), character);
                     else
-                        tokens.push(token,character);
+                        tokens.push(token, character);
                     token = '';
                 }
             } else {
@@ -356,9 +333,124 @@ class CalculadoraCientifica extends Calculadora {
         return tokens;
     }
 
+    onKeyPress(keyboardEvent) {
+        //console.log(keyboardEvent.key);
+        switch (keyboardEvent.key) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '.':
+                this.addElement(keyboardEvent.key);
+                break;
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                this.addElement(keyboardEvent.key);
+                break;
+            case 'Enter':
+                this.calc();
+                break;
+            case 'ç' :
+                this.ce();
+                break;   
+            case 'backspace':
+                this.limpiar();
+                break;
+            case 'b':
+                this.sumarMemoria();
+                break;
+            case 'n':
+                this.restarMemoria();
+                break;
+            case 'm':
+                this.sacarMemoria();
+                break;
+            case 'e':
+                this.e();
+                break;
+            case 'p':
+                this.pi();
+                break;
+            case 'c':
+                this.cos();    
+                break;
+            case 'C':
+                this.cosh();
+                break;
+            case 's':
+                this.sen();
+                break;
+            case 'S':
+                this.senh();
+                break;
+            case 't':
+                this.tan();
+                break;
+            case 'T':
+                this.tanh();
+                break;
+            case 'l':
+                this.ln();
+                break;
+            case 'L':
+                this.log();
+                break;
+            case 'o':
+                this.exp();
+                break;
+            case 'O':
+                this.exponentex();
+                break;
+            case 'q':
+                this.sqrt();
+                break;
+            case 'Q':
+                this.sqrt3();
+                break;
+            case 'd':
+                this.elevar2();
+                break;
+            case 'D':
+                this.elevare();
+                break;
+            case 'f':
+                this.elevar10();
+                break;
+            case 'i':
+                this.inversa();
+                break;
+            case 'g':
+                this.negativo();
+                break;
+            case 'h':
+                this.exponente2();
+                break;
+            case 'j':
+                this.exponente3();
+                break;
+            case 'k':
+                this.exponente4();
+                break;   
+            case 'u':
+                this.abs();  
+            case 'v':
+                this.fact();
+                break;
+            case 'w':
+                this.log2();
+                break;
 
-
-    
-
+            default:
+                break;
+        }
+    }
 }
 var calculadora = new CalculadoraCientifica();

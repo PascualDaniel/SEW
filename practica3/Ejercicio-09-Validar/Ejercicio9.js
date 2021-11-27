@@ -22,6 +22,7 @@ class Meteo {
         //this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     
     accionBoton(){
+        document.querySelector("main").innerHTML = "";
         this.addXML(this.ciudad1);
         this.addXML(this.ciudad2);
         this.addXML(this.ciudad3);
@@ -85,7 +86,7 @@ class Meteo {
                 var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                 
                 var stringDatos = "<h3>Datos meteorológicos de " + ciudad2 + "</h3>";
-                    stringDatos += "<ul><li>  <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt =\""+ciudad+"\"> </li>";
+                    stringDatos += "<ul><li> <img src=\"https://openweathermap.org/img/w/"+icon  +".png\" alt =\""+ciudad+"\"> </li>";
                     stringDatos += "<li>Ciudad: " + ciudad2 + "</li>";
                     stringDatos += "<li>Longitud: " + longitud + " grados</li>";
                     stringDatos += "<li>Latitud: " + latitud + " grados</li>";
@@ -113,10 +114,10 @@ class Meteo {
                     stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
                     stringDatos += "</ul>";
                 
-                    document.querySelector("section").innerHTML+= stringDatos
+                    document.querySelector("main").innerHTML+= stringDatos
                 },
                 error: function () {
-                    document.querySelector("section").appendChild( "<p>Ciudad no encontrada</p>")
+                    document.querySelector("main").append( "<p>Ciudad no encontrada</p>")
                 }
         });
     }

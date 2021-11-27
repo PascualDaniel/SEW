@@ -22,6 +22,7 @@ class Meteo {
         //this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
     accionBoton() {
+        document.querySelector("main").innerHTML = "";
         this.addJSON(this.ciudad1);
         this.addJSON(this.ciudad2);
         this.addJSON(this.ciudad3);

@@ -22,6 +22,7 @@ class Meteo {
         //this.correcto = "¡Todo correcto! JSON recibido de <a href='http://openweathermap.org'>OpenWeatherMap</a>"
     }
     accionBoton() {
+        document.querySelector("main").innerHTML = "";
         this.addJSON(this.ciudad1);
         this.addJSON(this.ciudad2);
         this.addJSON(this.ciudad3);
@@ -34,7 +35,7 @@ class Meteo {
 
     getUrl(ciudad) {
         return "https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + "," + this.codigoPais + this.unidades + this.idioma + "&APPID=" + this.apikey;
-    
+   
     }
 
 
@@ -48,7 +49,7 @@ class Meteo {
 
                 //Presentación de los datos contenidos en JSON
 
-                var stringDatos = "<h3>"+ciudad+"</h3><ul><li> <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\"> </li>";
+                var stringDatos = "<h3>"+ciudad+"</h3><ul><li> <img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt =\""+ciudad+"\"> </li>";
                 stringDatos += "<li>Ciudad: " + datos.name + "</li>";
                 stringDatos += "<li>País: " + datos.sys.country + "</li>";
                 stringDatos += "<li>Latitud: " + datos.coord.lat + " grados</li>";
@@ -68,10 +69,10 @@ class Meteo {
                 stringDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
                 stringDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
 
-                document.querySelector("section").innerHTML+= stringDatos
+                document.querySelector("main").innerHTML+= stringDatos
             },
             error: function () {
-                document.querySelector("section").appendChild( "<p>Ciudad no encontrada</p>")
+                document.querySelector("main").appendChild( "<p>Ciudad no encontrada</p>")
             }
         });
  

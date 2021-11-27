@@ -22,7 +22,7 @@
         <h2>Texto cambiable : </h2>
         <section>
 
-           
+
 
             <input title="Cambiar" type="text" value="Adios" id="Cambiartext">
             <input accesskey="c" type="button" value="Cambiar" onclick="pe.accionModificar()">
@@ -41,9 +41,9 @@
         <section>
             <p>Añadir:
 
-                <input title="n1" type="number" value="1" >
+                <input title="n1" type="number" value="1">
                 <input title="n2" type="number" value="2">
-                <input title="n3" type="number" value="3" >
+                <input title="n3" type="number" value="3">
                 <input type="button" value="Añadir" onclick="pe.accionAñadir()">
             </p>
 
@@ -65,26 +65,33 @@
             </p>
 
             <table>
+                <caption>Tabla para sumar</caption>
                 <thead>
-                    <tr>
-                        <th>X</th>
-                        <th>N1</th>
-                        <th>N2</th>
-                        <th>N3</th>
-                        <th>Total</th>
-                    </tr>
+
+                    <th>X</th>
+                    <th>N1</th>
+                    <th>N2</th>
+                    <th>N3</th>
+                    <th>Total</th>
+
                 </thead>
                 <tbody>
-
+                    <tr>
+                        <th>0</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
                 </tbody>
                 <tfoot>
-                    <tr>
-                        <th>Total</th>
-                        <td >0</td>
-                        <td >0</td>
-                        <td >0</td>
-                        <td >0</td>
-                    </tr>
+
+                    <th>Total</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+
 
                 </tfoot>
             </table>

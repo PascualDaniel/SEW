@@ -34,20 +34,9 @@ main input[type="text"]:nth-child(2){
 main p{
     margin: 1.5em;
     display: grid;
-  
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.5em;
-}
-@media screen and (max-width: 600px) {
-    main p{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 600px) {
-    main p{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-    
+}  
 
 input[type="button"] {
     height:3em;

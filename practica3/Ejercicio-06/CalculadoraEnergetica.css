@@ -35,9 +35,15 @@ main ul li{
     display: block;
     list-style-type: none;
 }
+main p{
+    display: grid;
+}
 input{
-    width: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 input[type="button"]{
     margin-top: 1em;
+    width: 50%;
 }

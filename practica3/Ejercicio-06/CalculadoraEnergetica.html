@@ -11,137 +11,45 @@
 </head>
 
 <body>
-
-    <h1>Calculadora Energetica</h1>
-    <div id="calculadora">
-
-        <div id="entrada">
-            <table>
-               
-                    <tr id="nombres">
-                        <th >
-                            <p>Equipo:</p>
-                        </th>
-                        <th >
-                            <p>Cantidad:</p>
-
-                        </th>
-                        <th >
-                            <p>Potencia:</p>
-                        </th>
-
-                        <th>
-                            <p>Eficiencia:</p>
-                        </th>
-                        <th >
-                            <p>Tiempo:</p>
-                        </th>
-                        <th >
-                            <p>Dias:</p>
-                        </th>
-                        <th >
-                            <p>X</p>
-                        </th>
-                    </tr>
-                    <tr id="inputs">
-                        <td>
-                            <input  type="text"  title="nombre" id ="nombre">
-                        </td>
-                        <td>
-                            <input  type="number" title="cantidad" id ="cantidad" value=0>
-                        </td>
-                        <td>
-                            <input type="number" title="potencia"  id ="potencia" value=0>
-                        </td>
-
-                        <td>
-                            <select title="Eficiencia" name="Eficiencia" id="Eficiencia">
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
-                                <option value="D">D</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="number" title="tiempo" id ="tiempo" value=0>
-                        </td>
-
-                        <td>
-                            <input type="number" title="dias" id ="dias" value=0>
-                        </td>
-                        <td>
-                            <input type="button" accesskey="C" value="Calcular" onclick="calculadora.bcalcular()">
-                        </td>
-                    </tr>
-                
-            </table>
-        </div>
-
-        <div id="tablas">
-            <table>
-                <tbody id ="datos">
-                    <tr id="Cabecera">
-                        <td>
-                            <p>Equipo:</p>
-                        </td>
-                        <td>
-                            <p>Cantidad:</p>
-
-                        </td>
-                        <td>
-                            <p>Potencia:</p>
-                        </td>
-
-                        <td>
-                            <p>Eficiencia:</p>
-                        </td>
-                        <td>
-                            <p>Tiempo:</p>
-                        </td>
-                        <td>
-                            <p>Dias:</p>
-                        </td>
-                        <td>
-                            <p>KWh:</p>
-                        </td>
-                        <td>
-                            <p>Dinero:</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id ="numeros">
-
-            <table>
-
-                    <tr >
-                        <th>
-                            <p>KWH Total:</p>
-                        </th>
-                        <th>
-                            <p>Dinero Total:</p>
-
-                        </th>
-    
-                    </tr>
-                    <tr >
-                        <td>
-                            <p id="KWHTotal">0</p>
-                        </td>
-                        <td>
-                            <p id = "DineroTotal">0</p>
-
-                        </td>
-    
-                    </tr>
-    
-            </table>
+    <header>
+        <h1>Calculadora Energetica</h1>
+    </header>
+    <main>
+        <ul>
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+        </ul>
+        
 
 
-        </div>
+        <p>
+            <label for="nombre">Aparato:</label>
+            <input type="text" title="nombre" accesskey="n" id="nombre" value="aparato">
 
-    </div>
+            <label for="cantidad">Numero:</label>
+            <input type="number" accesskey="c" title="cantidad" id="cantidad" value=0>
+
+            <label for="potencia">Potencia:</label>
+            <input type="number" accesskey="p" title="potencia" id="potencia" value=0>
+
+            <label for="eficiencia">Eficiencia:</label>
+            <select title="Eficiencia" name="Eficiencia" id="eficiencia">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </p>
+        <p>
+            <input type="button" accesskey="a" value="Añadir" onclick="calculadora.bAdd()">
+
+            <input type="button" accesskey="s" value="Sumar" onclick="calculadora.suma()">
+
+            <input type="button" accesskey="t" value="Total" onclick="calculadora.sumarTodo()">
+        </p>
+    </main>
+
 </body>
 
 </html>

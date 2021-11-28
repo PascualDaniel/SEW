@@ -10,82 +10,34 @@ h1{
     background-color: whitesmoke;
     font-size: 5em;
 }
-#entrada{
-    display: flex;
- 
- 
-    margin: auto;
-    text-align: center ;
-
-    background-color: rgb(71, 71, 71);
-    color:white;
-
-    border: 3px black ridge;
-    align-items: center;
- 
-    padding-bottom: 1em;
-    width: 80%;
-    height: auto;
-}
-   #entrada table{
-    border-collapse: collapse;
-    width: 80%;
-    height: auto;
-    margin: auto;
-   }
 
 
+main ul{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 
-
-#nombres{
-   color: aliceblue;
-   background-color: rgb(71, 71, 71);
-
-}
-#inputs{
-    width: 100%;
-    height: auto;
-}
-#inputs > td>input{
-    text-align: right ;
-}
-
-#tablas{
-    width: 80%;
-    height: auto;
-
-    
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: column;
-
-    border: 2px rgb(0, 0, 0);
     text-align: right;
-    padding: 0px 5px;
+    align-self: center;
     font-size: 1em;
-    align-items: center;
+    border: 3px black ridge;
     background-color: rgb(255, 255, 255);
     color:black;
-    
-    margin: auto;
-
-}
-#numeros{
-    width: 80%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: column;
-
-    border: 2px rgb(0, 0, 0);
-    text-align: center;
-    padding: 0px 5px;
-    font-size: 1em;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    color:black;
- 
-    margin: auto;
-
+    overflow: hidden;
+    margin-top: 1em;
+    list-style-type: none;
 }
 
+main ul li{
+    text-align: right;
+    padding: 0.1em;
+    display: block;
+    list-style-type: none;
+}
+input{
+    width: 100%;
+}
+input[type="button"]{
+    margin-top: 1em;
+}

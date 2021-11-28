@@ -5,6 +5,11 @@ class Calculadora {
     	this.vPantalla = "0";//valor de la pantalla actual
         this.escribiendo=true;
         this.memoria=0;
+
+        
+        document.addEventListener("keypress", function (e) {
+            calculadora.onKeyPress(e);
+        });
     }
 
     mmas(){
@@ -55,7 +60,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num + num2;
+            this.pila.push(num + num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -64,7 +69,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num - num2;
+            this.pila.push(num - num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -73,7 +78,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num * num2;
+            this.pila.push(num * num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -82,7 +87,7 @@ class Calculadora {
         if(this.pila.length>1){
             var num = new Number(this.pila.pop());
             var num2 = new Number(this.pila.pop());
-            this.vPantalla= num / num2;
+            this.pila.push(num / num2);
             this.refrescarPila();
         }
         document.getElementById("pantalla").value =this.vPantalla;
@@ -174,102 +179,171 @@ class Calculadora {
     }
 
  
-
+    onKeyPress(keyboardEvent) {
+        //console.log(keyboardEvent.key);
+        switch (keyboardEvent.key) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '.':
+                this.addElement(keyboardEvent.key);
+                break;
+            case '+':
+                this.suma();
+                break;
+            case '-':
+                this.resta();
+                break;
+            case '*':
+                this.multi();
+                break;
+            case '/':
+                this.div();
+                break;
+            case '^':
+                this.pow();
+                break;
+            case 'C':
+                this.ce();
+                break;
+            case 'p':
+                this.pi();
+                break;
+            case 'e':
+                this.e();
+                break;
+            case 'a':
+                this.abs();
+                break;
+            case 'c':
+                this.cos();
+                break;
+            case 'C':
+                this.cosh();
+                break;
+            case 's':
+                this.sen();
+                break;
+            case 'S':
+                this.senh();
+                break;
+            case 't':
+                this.tan();
+                break;
+            case 'T':
+                this.tanh();
+                break;
+            case 'x':
+                this.exp();
+                break;
+            case 's':
+                this.sqrt();
+                break;
+            case 'l':
+                this.log();
+                break;
+            case 'L':
+                this.ln();
+                break;
+            case 'i':
+                this.inversa();
+                break;
+            case 'Enter':
+                this.igual();
+                break;
+            case ',':
+                this.addElement(keyboardEvent.key);
+                break;
+            case 'Backspace':
+                this.backspace();
+                break;
+            default:
+                break;
+        }
+    }
    
 
 }
+var calculadora = new Calculadora();
+
 
 class CalculadoraEnergetica extends Calculadora{
     constructor(){
+        super();
+
+
+    }
+
+    onKeyPress(keyboardEvent) {
+
+            }
+    
+    refrescarPila(){
+        var elementosHtml ="";
+        elementosHtml +=("<li>"+0+"</li>");
+        for(var i  in this.pila){
+            elementosHtml +=("<li>"+this.pila[i]+"KWh</li>");
+        }
+        document.querySelector("ul").innerHTML = elementosHtml;
+    }
+
+    suma(){
+        if(this.pila.length>1){
+            var num = new Number(this.pila.pop());
+            var num2 = new Number(this.pila.pop());
+            this.pila.push(num + num2);
+            this.refrescarPila();
+        }
+    }
+    sumarTodo(){
+        var suma = 0;
+        for(var i in this.pila){
+            suma += this.pila[i];
+        }
         this.pila = new Array();
-        this.nfilas=0;
-        this.kwhTotal=0;
-        this.dineroTotal=0;
+        this.pila.push(suma);
+        this.refrescarPila();
     }
-    
-    bcalcular(){
-        var nombre = document.getElementById("nombre").value
-        var cantidad = document.getElementById("cantidad").value
-        var potencia = document.getElementById("potencia").value
-        var eficiencia = document.getElementById("Eficiencia").value;
-        var tiempo = document.getElementById("tiempo").value
-        var dias = document.getElementById("dias").value
 
-        var kwh=this.getKWH(cantidad,potencia,eficiencia,tiempo,dias);
-        var dinero =this.getPrecioMedio(kwh);
+    bAdd(){
+        var nombre = document.querySelector("main p input[type='text']").value
+        var cantidad = document.querySelector("main p input[type='number']:nth-of-type(2)").value
+        var potencia = document.querySelector("main p input[type='number']:nth-of-type(3)").value
+        var eficiencia = document.querySelector("main p select").value;
 
-        this.sumar(kwh,dinero);
-        this.creaFila(nombre,cantidad, potencia,eficiencia,tiempo,dias,kwh,dinero)
-    }
+        var kwh=this.getKWH(cantidad,potencia,eficiencia);
+        this.pila.push(kwh);
+        this.refrescarPila()
+
+       }
 
     
-    sumar(kwh,dinero){
-        this.kwhTotal+=parseFloat(kwh);
-        this.dineroTotal+=parseFloat(dinero) ;
-        document.getElementById("KWHTotal").innerText = this.kwhTotal;
-        document.getElementById("DineroTotal").innerText =this.dineroTotal+"€";
-        
-    }
 
-    creaFila(nombre,cantidad, potencia,eficiencia,tiempo,dias,kwh,dinero){
-        var row = document.createElement("TR")
 
-        var nom = document.createElement("TD")
-        nom.appendChild(document.createTextNode(nombre));
-        row.appendChild(nom);
-        
-        var can = document.createElement("TD")
-        can.appendChild(document.createTextNode(cantidad));
-        row.appendChild(can);
-
-        var po = document.createElement("TD")
-        po.appendChild(document.createTextNode(potencia));
-        row.appendChild(po);
-        
-        var ef = document.createElement("TD")
-        ef.appendChild(document.createTextNode(eficiencia));
-        row.appendChild(ef);
-
-        var ti = document.createElement("TD")
-        ti.appendChild(document.createTextNode(tiempo));
-        row.appendChild(ti);
-
-        var di = document.createElement("TD")
-        di.appendChild(document.createTextNode(dias));
-        row.appendChild(di);
-
-        var k = document.createElement("TD")
-        k.appendChild(document.createTextNode(kwh));
-        row.appendChild(k);
-        
-        var di = document.createElement("TD")
-        di.appendChild(document.createTextNode(dinero));
-        row.appendChild(di);
-
-        document.getElementById("datos").appendChild(row);
-    }
-
-    getKWH(cantidad, potencia,eficiencia,tiempo,dias){
-        return parseFloat(cantidad)*parseFloat(potencia)*   this.eficienciaCal(eficiencia)/100*parseFloat(tiempo)*parseFloat(dias);
-    }
-    getPrecioMedio(kwh){
-        return 0.1213 *parseFloat(kwh);
+    getKWH(cantidad, potencia,eficiencia){
+        return parseFloat(cantidad)*parseFloat(potencia) *this.eficienciaCal(eficiencia);
     }
 
     eficienciaCal(letra){
         switch(letra){
-            case letra =="A":
-                return 90;
-            case letra =="B":
-                return 80;   
-            case letra =="C":
-                return 70;
-            case letra =="D":
-                return 60; 
+            case "A":
+                return 90/100;
+            case "B":
+                return 80/100;   
+            case "C":
+                return 70/100;
+            case "D":
+                return 60/100; 
             default:  
-                return 90; 
+                return 90/100; 
         }
     }
-
 }
 var calculadora = new CalculadoraEnergetica();

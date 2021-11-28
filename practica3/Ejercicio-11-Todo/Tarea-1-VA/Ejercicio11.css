@@ -1,0 +1,58 @@
+body{
+    background-color:rgb(48, 47, 47) ;
+    color: black;
+
+}
+header{
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+
+
+h1{
+    
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 5em;
+}
+h2{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 3em;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+main {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 80%;
+
+    
+}
+section{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80%;
+    background-color: whitesmoke;
+}
+section p{
+    padding: 1em;
+    font-size: 1em;
+}

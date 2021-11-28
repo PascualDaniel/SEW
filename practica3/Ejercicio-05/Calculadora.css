@@ -29,7 +29,7 @@ main input[type="text"]{
 
 }
 main p{
-    width: 80%;
+    width: 98%;
     margin: 1.5em;
     display: grid;
     margin-left: auto;
@@ -62,8 +62,8 @@ main ul li{
 }
 
 input[type="button"] {
-    height:3em;
-    width:3em;
+    height:100%;
+    width:100%;
     cursor:pointer;
     font-size:1.4em;
     background-color:rgb(228, 228, 228) ;

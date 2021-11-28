@@ -1,0 +1,25 @@
+/* Ejercicio01.css */
+/* Version 1.0. 29/10/2020. Daniel Pascual Lopez. Universidad de Oviedo */
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:red;
+}
+h2{
+    text-align:center;
+    color:green;
+}
+h3{
+    text-align:center;
+    color:blue;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+p{
+    color:gray;
+}

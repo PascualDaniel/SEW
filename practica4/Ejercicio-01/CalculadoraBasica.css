@@ -1,0 +1,62 @@
+
+body{
+    background-color:rgb(255, 255, 255) ;
+    color:black;
+}
+main{
+    display: block;
+    text-align: center ;
+    background-color: rgb(71, 71, 71);
+    color:black;
+    border: 3px black ridge;
+    align-items: center;
+    justify-content: center;
+    max-width: 30em;
+}
+
+main input[type="text"]:nth-child(2){
+    width: 80%;
+    min-height: 2em;
+ 
+    text-align: right;
+    align-self: center;
+    font-size: 2.5em;
+
+    background-color: rgb(169, 211, 168);
+    color:black;
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+
+}
+
+
+main form{
+    width: 80%;
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5em;
+}  
+
+input[type="submit"] {
+    height:100%;
+    width:100%;
+    cursor:pointer;
+    font-size:1.4em;
+    background-color:rgb(228, 228, 228) ;
+    color:black;
+}
+main form input[type="submit"]:nth-child(4n){
+    background-color:rgb(255, 91, 91) ;
+    color:black;
+}
+main form input[type="submit"]:last-child{
+    background-color:rgb(34, 34, 34) ;
+    color:rgb(255, 255, 255);
+}
+main form input[type="submit"]:nth-child(-n+3) {
+    background-color:rgb(49, 49, 49) ;
+    color:rgb(255, 255, 255);
+  
+}

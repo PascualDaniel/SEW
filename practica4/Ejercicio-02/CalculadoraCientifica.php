@@ -314,15 +314,15 @@
                     <input type="submit" value="M*" name="m*"">
 
 
-                    <input type="submit" value="Sin" name="sin"">
-                    <input type="submit" value="Cos" name="cos"">
-                    <input type="submit" value="Tan" name="tan"">
-                    <input type="submit" value="X^3" name="^3"">
-                    <input type="submit" value="C" name="limpiar"">
+                    <input type="submit" value="Sin" name="sin">
+                    <input type="submit" value="Cos" name="cos">
+                    <input type="submit" value="Tan" name="tan">
+                    <input type="submit" value="X^3" name="^3">
+                    <input type="submit" value="C" name="limpiar">
 
                     <input type="submit" value="Sec"name="sinh">
                     <input type="submit" value="Csc" name="cosh">
-                    <input type="submit" value="Cot" name="tanh"">
+                    <input type="submit" value="Cot" name="tanh">
                     <input type="submit" value="x^2"name="^2">
                     <input type="submit" value="CE" name="ce">
 

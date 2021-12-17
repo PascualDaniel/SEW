@@ -155,6 +155,9 @@
         </main>
 
     '?>
+    <footer>
+        Hecho por Daniel Pascual Lopez - UO269728
+    </footer>
 </body>
 
 </html>

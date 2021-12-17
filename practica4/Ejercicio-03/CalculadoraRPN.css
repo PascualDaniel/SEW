@@ -30,7 +30,7 @@ main input[type="text"]{
 }
 main form{
     width: 98%;
-    margin: 1.5em;
+
     display: grid;
     margin-left: auto;
     margin-right: auto;

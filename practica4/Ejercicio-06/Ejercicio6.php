@@ -107,7 +107,7 @@
             public function insertarFormulario()
             {
                 echo '
-            <h2>Agregar Usuario</h2>
+            <h3>Agregar Usuario</h3>
             <form action="#" method="post" name="ins"> 
             
                 <p>
@@ -233,7 +233,7 @@
             {
 
                 echo '
-                <h2>Buscar Usuario</h2>
+                <h3>Buscar Usuario</h3>
                 <form action="#" method="post" name="buscarDato"> 
                     <label for="busc"> DNI de la persona:</label>
                     <input type ="text" id="busc" name="dni"/>
@@ -280,7 +280,7 @@
             public function modificarFormulario()
             {
                 echo '
-            <h2>Modificar Usuario</h2>
+            <h3>Modificar Usuario</h3>
             <form action="#" method="post" name="mod"> 
             
             <p>
@@ -418,7 +418,7 @@
             {
 
                 echo '
-                <h2>Eliminar Usuario</h2>
+                <h3>Eliminar Usuario</h3>
                 <form action="#" method="post" name="eliminarDato"> 
                     <label for="eli"> DNI de la persona:</label>
                     <input type ="text" id="eli" name="dni"/>
@@ -453,7 +453,7 @@
             }
             public function generarInforme()
             {
-                $print = "<h2>Informe</h2>";
+                $print = "<h3>Informe</h3>";
                 $this->db->select_db("Ejercicio6");
 
                 //Calcuar Edad Media

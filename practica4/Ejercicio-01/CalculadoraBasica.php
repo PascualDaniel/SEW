@@ -121,7 +121,7 @@
     }
 
     echo '
-    <main  name="calculadora">
+    <main>
             <label for = "pantalla" hidden> Pantalla de la calculadora </label>
             <input id="pantalla"  value="' . $_SESSION["calculadora"] -> getPantalla() . '" type="text" readonly  >
            

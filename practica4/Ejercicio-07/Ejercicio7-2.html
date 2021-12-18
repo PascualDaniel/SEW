@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://localhost/Ejercicio-07/Ejercicio7.php -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Daniel Pascual">
+    <meta name="description" content="Una pagina web que gestiona una base de datos de un cine">
+    <meta name="keywords" content="Database, PHP,Cine">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cine el Mono del SOL</h1>
+    </header>
+    <h2>Administrar Cartelera: </h2>
+    <section>
+        <form action="https://localhost/Ejercicio-07/Ejercicio7.php#" method="post" name="operaciones">
+
+            <input type="submit" name="addFilm" value="Insertar Pelicula">
+            <input type="submit" name="addCompany" value="Insertar Compania">
+            <input type="submit" name="addDirector" value="Insertar Director">
+            <input type="submit" name="verPeliculas" value="Ver Peliculas">
+        </form>
+    </section>
+    <main>
+
+        
+                <h2>Agregar Pelicula</h2>
+                <form action="https://localhost/Ejercicio-07/Ejercicio7.php#" method="post" name="ins"> 
+                    <p>
+                        <label for="id"> ID:</label>
+                        <input type="text" id="id" name="idPeli">
+                    </p>
+                    <p>
+                        <label for="titulo"> Titulo:</label>
+                        <input type="text" id="titulo" name="tituloPeli">
+                    </p>
+                    <p>
+                        <label for="categoria"> Categoria:</label>
+                        <input type="text" id="categoria" name="categoriaPeli">
+                    </p>
+                    <p>
+                        <label for="argumento"> Argumento:</label>
+                        <input type="text" id="argumento" name="argumentoPeli">
+                    </p>
+                    <p>
+                        <label for="duracion"> Duracion:</label>
+                        <input type="text" id="duracion" name="duracionPeli">
+                    </p>
+                    <p>
+                        <label for="fecha"> Fecha:</label>
+                        <input type="date" id="fecha" name="fechaPeli">
+                    </p>
+                    <p>
+                    <label for="id_compania"> ID Compania:</label>
+                        <input type="text" id="id_compania" name="compaPeli">
+                    </p>
+                    <p>
+                    <input type="submit" name="insertarPeliAccion" value="Insertar Pelicula">
+                    </p>
+                    <p>
+                    <input type="submit" name="filePeliAccion" value="Cargar Archivo Peliculas">
+                    </p>
+                </form> 
+                    </main>
+    <footer>
+        Por Daniel Pascual Lopez - UO269728
+        
+    </footer>
+
+
+</body></html>

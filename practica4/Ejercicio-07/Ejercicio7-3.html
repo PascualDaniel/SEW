@@ -9,13 +9,13 @@
     <title>Ejercicio 7</title>
     <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
 </head>
-
 <body>
     <header>
         <h1>Cine el Mono del SOL</h1>
     </header>
-    <h2>Administrar Cartelera: </h2>
+    
     <section>
+    <h2>Administrar Cartelera: </h2>
         <form action="https://localhost/Ejercicio-07/Ejercicio7.php#" method="post" name="operaciones">
 
             <input type="submit" name="addFilm" value="Insertar Pelicula">
@@ -27,28 +27,19 @@
     <main>
 
         
-                <h2>Agregar Compania</h2>
-                <form action="https://localhost/Ejercicio-07/Ejercicio7.php#" method="post" name="ins"> 
+                <h3>Cargar Peliculas</h3>
+                <form action="https://localhost/Ejercicio-07/Ejercicio7.php#" method="post" enctype="multipart/form-data">
                     <p>
-                        <label for="id"> ID:</label>
-                        <input type="text" id="id" name="idCompa">
+                        <label for="archPeli"> Archivo a cargar desde la máquina cliente</label>
+                        <input id="archPeli" type="file" name="archivo">
                     </p>
                     <p>
-                        <label for="nombre"> Nombre:</label>
-                        <input type="text" id="nombre" name="nombreCompa">
+                        <input type="submit" name="cargarPeliAccion" value="Cargar">
                     </p>
-                    <p>
-                        <label for="direccion"> Direccion:</label>
-                        <input type="text" id="direccion" name="dirCompa">
-                    </p>
-                    <p>
-                    <input type="submit" name="insertarCompAccion" value="Insertar Compania">
-                    </p>
-                    <p>
-                    <input type="submit" name="fileCompAccion" value="Cargar archivo Companias">
-                    </p>
-                </form> 
-                    </main>
+                </form>
+
+                        <p>.</p>
+    </main>
     <footer>
         Por Daniel Pascual Lopez - UO269728
         

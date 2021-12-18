@@ -15,8 +15,9 @@
     <header>
         <h1>Cine el Mono del SOL</h1>
     </header>
-    <h2>Administrar Cartelera: </h2>
+    
     <section>
+    <h2>Administrar Cartelera: </h2>
         <form action="#" method="post" name="operaciones">
 
             <input type="submit" name="addFilm" value="Insertar Pelicula" />
@@ -144,18 +145,18 @@
             public function insertarFormularioComp()
             {
                 echo '
-                <h2>Agregar Compania</h2>
+                <h3>Agregar Compania</h3>
                 <form action="#" method="post" name="ins"> 
                     <p>
-                        <laber for="id"> ID:</label>
+                        <label for="id"> ID:</label>
                         <input type ="text" id="id" name="idCompa"/>
                     </p>
                     <p>
-                        <laber for="nombre"> Nombre:</label>
+                        <label for="nombre"> Nombre:</label>
                         <input type ="text" id="nombre" name="nombreCompa"/>
                     </p>
                     <p>
-                        <laber for="direccion"> Direccion:</label>
+                        <label for="direccion"> Direccion:</label>
                         <input type ="text" id="direccion" name="dirCompa"/>
                     </p>
                     <p>
@@ -170,34 +171,34 @@
             public function insertarFormularioPeli()
             {
                 echo '
-                <h2>Agregar Pelicula</h2>
+                <h3>Agregar Pelicula</h3>
                 <form action="#" method="post" name="ins"> 
                     <p>
-                        <laber for="id"> ID:</label>
+                        <label for="id"> ID:</label>
                         <input type ="text" id="id" name="idPeli"/>
                     </p>
                     <p>
-                        <laber for="titulo"> Titulo:</label>
+                        <label for="titulo"> Titulo:</label>
                         <input type ="text" id="titulo" name="tituloPeli"/>
                     </p>
                     <p>
-                        <laber for="categoria"> Categoria:</label>
+                        <label for="categoria"> Categoria:</label>
                         <input type ="text" id="categoria" name="categoriaPeli"/>
                     </p>
                     <p>
-                        <laber for="argumento"> Argumento:</label>
+                        <label for="argumento"> Argumento:</label>
                         <input type ="text" id="argumento" name="argumentoPeli"/>
                     </p>
                     <p>
-                        <laber for="duracion"> Duracion:</label>
+                        <label for="duracion"> Duracion:</label>
                         <input type ="text" id="duracion" name="duracionPeli"/>
                     </p>
                     <p>
-                        <laber for="fecha"> Fecha:</label>
+                        <label for="fecha"> Fecha:</label>
                         <input type ="date" id="fecha" name="fechaPeli"/>
                     </p>
                     <p>
-                    <laber for="id_compania"> ID Compania:</label>
+                    <label for="id_compania"> ID Compania:</label>
                         <input type ="text" id="id_compania" name="compaPeli"/>
                     </p>
                     <p>
@@ -212,22 +213,22 @@
             public function insertarFormularioDirector()
             {
                 echo '
-                <h2>Agregar Director</h2>
+                <h3>Agregar Director</h3>
                 <form action="#" method="post" name="ins"> 
                     <p>
-                        <laber for="id"> ID:</label>
+                        <label for="id"> ID:</label>
                         <input type ="text" id="id" name="idDir"/>
                     </p>
                     <p>
-                        <laber for="nombre"> Nombre:</label>
+                        <label for="nombre"> Nombre:</label>
                         <input type ="text" id="nombre" name="nombreDir"/>
                     </p>
                     <p>
-                        <laber for="fechaNaz"> Fecha Nacimiento:</label>
+                        <label for="fechaNaz"> Fecha Nacimiento:</label>
                         <input type ="date" id="fechaNaz" name="fechaDir"/>
                     </p>
                     <p>
-                        <laber for="idPel"> Id Pelicula:</label>
+                        <label for="idPel"> Id Pelicula:</label>
                         <input type ="text" id="idPel" name="idPelDir"/>
                     </p>
 
@@ -235,7 +236,7 @@
                     <input type="submit" name="insertarDirecAccion" value="Insertar Director"/>
                     </p>
                     <p>
-                    <input type="submit" name="fileDirecAccion" value="Cargar archivo Directores"/>
+                    <input type="submit" name="fileDirectorAccion" value="Cargar archivo Directores"/>
                     </p>
         
                 </form> 
@@ -266,14 +267,33 @@
 
                 $query->close();
             }
+            public function cargarFormCompania()
+            {
+                echo "
+                <h3>Cargar Compania</h3>
+                <form action='#' method='post' enctype='multipart/form-data'>
+                    <p>
+                        <label for='archComp'> Archivo a cargar desde la máquina cliente</label>
+                        <input id = 'archComp'type='file' name='archivo'/>
+                    </p>
+                    <p>
+                        <input type='submit' name = 'cargarCompAccion' value='Cargar'/>
+                    </p>
+                </form>
+
+                ";
+            }
             public function cargarCompania()
             {
 
-                $csv = fopen("compania.csv", "r");
-                $counter = 0;
-                while (!feof($csv)) {
 
-                    $row = fgetcsv($csv, 100, ";");
+
+                
+                $fp = fopen($_FILES['archivo']['tmp_name'], 'rb');
+                $counter = 0;
+                while (($row = fgetcsv($fp, 100, ";")) !== false) {
+
+                    //$row = fgetcsv($fp, 100, ";");
                     if ($row != false) {
                         try {
                             $id = $row[0];
@@ -282,8 +302,8 @@
 
                             $this->db->select_db("Ejercicio7");
                             $query = $this->db->prepare("INSERT INTO Compania 
-                (id, nombre, direccion)
-                values (?, ?, ?)");
+                                (id, nombre, direccion)
+                                 values (?, ?, ?)");
                             $query->bind_param(
                                 "sss",
                                 $id,
@@ -297,11 +317,12 @@
                         $counter++;
                     }
 
-                    if ($counter >= 0) {
-                        echo "<p>" . $counter . " comanias insertadas</p>";
-                    } else {
-                        echo "<p>No se pudo insertar nada</p>";
-                    }
+                   
+                }
+                if ($counter >= 0) {
+                    echo "<p>" . $counter . " comanias insertadas</p>";
+                } else {
+                    echo "<p>No se pudo insertar nada</p>";
                 }
             }
             public function addPelicula()
@@ -352,14 +373,30 @@
                 }
                 $query->close();
             }
+
+            public function cargarFormPelicula()
+            {
+                echo "
+                <h3>Cargar Peliculas</h3>
+                <form action='#' method='post' enctype='multipart/form-data'>
+                    <p>
+                        <label for='archPeli'> Archivo a cargar desde la máquina cliente</label>
+                        <input id = 'archPeli'type='file' name='archivo'/>
+                    </p>
+                    <p>
+                        <input type='submit' name = 'cargarPeliAccion' value='Cargar'/>
+                    </p>
+                </form>
+
+                ";
+            }
             public function cargarPeliculas()
             {
 
-                $csv = fopen("peliculas.csv", "r");
+              
+                $fp = fopen($_FILES['archivo']['tmp_name'], 'rb');
                 $counter = 0;
-                while (!feof($csv)) {
-
-                    $row = fgetcsv($csv, 100, ";");
+                while (($row = fgetcsv($fp, 100, ";")) !== false) {
                     if ($row != false) {
                         try {
                             $id = $row[0];
@@ -403,11 +440,12 @@
                         $counter++;
                     }
 
-                    if ($counter >= 0) {
-                        echo "<p>" . $counter . " peliculas insertadas</p>";
-                    } else {
-                        echo "<p>No se pudo insertar nada</p>";
-                    }
+                    
+                }
+                if ($counter >= 0) {
+                    echo "<p>" . $counter . " peliculas insertadas</p>";
+                } else {
+                    echo "<p>No se pudo insertar nada</p>";
                 }
             }
 
@@ -469,15 +507,29 @@
                 }
                 $query->close();
             }
+            public function cargarFormDirector()
+            {
+                echo "
+                <h3>Cargar Directores</h3>
+                <form action='#' method='post' enctype='multipart/form-data'>
+                    <p>
+                        <label for='archDir'> Archivo a cargar desde la máquina cliente</label>
+                        <input id = 'archDir'type='file' name='archivo'/>
+                    </p>
+                    <p>
+                        <input type='submit' name = 'cargarDirectorAccion' value='Cargar'/>
+                    </p>
+                </form>
 
+                ";
+            }
             public function cargarDirector()
             {
 
-                $csv = fopen("director.csv", "r");
+                
+                $fp = fopen($_FILES['archivo']['tmp_name'], 'rb');
                 $counter = 0;
-                while (!feof($csv)) {
-
-                    $row = fgetcsv($csv, 100, ";");
+                while (($row = fgetcsv($fp, 100, ";")) !== false) {
                     if ($row != false) {
                         try {
                             $id = $row[0];
@@ -523,11 +575,12 @@
                         $counter++;
                     }
 
-                    if ($counter >= 0) {
-                        echo "<p>" . $counter . " directores insertados</p>";
-                    } else {
-                        echo "<p>No se pudo insertar nada</p>";
-                    }
+                    
+                }
+                if ($counter >= 0) {
+                    echo "<p>" . $counter . " directores insertados</p>";
+                } else {
+                    echo "<p>No se pudo insertar nada</p>";
                 }
             }
             
@@ -565,11 +618,16 @@
                 if (isset($_POST["addDirector"])) $this->insertarFormularioDirector();
 
                 if (isset($_POST["insertarCompAccion"])) $this->addCompania();
-                if (isset($_POST["fileCompAccion"])) $this->cargarCompania();
+                if (isset($_POST["fileCompAccion"])) $this->cargarFormCompania();
+                if (isset($_POST["cargarCompAccion"])) $this->cargarCompania();
+
                 if (isset($_POST["insertarPeliAccion"])) $this->addPelicula();
-                if (isset($_POST["filePeliAccion"])) $this->cargarPeliculas();
+                if (isset($_POST["filePeliAccion"])) $this->cargarFormPelicula();
+                if (isset($_POST["cargarPeliAccion"])) $this->cargarPeliculas();
+
                 if (isset($_POST["insertarDirecAccion"])) $this->addDirector();
-                if (isset($_POST["fileDirectorAccion"])) $this->cargarDirector();
+                if (isset($_POST["fileDirectorAccion"])) $this->cargarFormDirector();
+                if (isset($_POST["cargarDirectorAccion"])) $this->cargarDirector();
 
                 if (isset($_POST["verPeliculas"])) $this->verPeliculas();
                 //if (isset($_POST["tabla"])) $this->crearTabla();
@@ -581,9 +639,10 @@
         }
 
         ?>
+        <p>.</p>
     </main>
     <footer>
-        <h2>Por Daniel Pascual Lopez - UO269728</h2>
+        Por Daniel Pascual Lopez - UO269728
         
     </footer>
 </body>

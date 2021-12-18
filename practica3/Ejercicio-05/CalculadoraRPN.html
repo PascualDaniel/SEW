@@ -17,64 +17,76 @@
         <h1>Calculadora de notación polaca inversa</h1>
     </header>
 
+    <p>
+        Para hacer operaciones con la calculadora es necesario usar el Enter para meterlo en la pila.
+    </p>
+    <p>
+        Con la pila se Hacen las operaciones
+    </p>
 
-    
-        <main>
-            <ul>
-                <li>0</li>
-                <li>0</li>
-                <li>0</li>
-            </ul>
+    <main>
+        <ul>
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+        </ul>
 
-            <label for = "pantalla" hidden> Pantalla de la calculadora </label>
-            <input id="pantalla" type="text" readonly  value="0">
+        <label for="pantalla" hidden> Pantalla de la calculadora </label>
+        <input id="pantalla" type="text" readonly value="0">
 
-  
-            <p>
-                <input type="button"  value="MC" onclick="calculadora.mlimpiar()">
-                <input type="button"  value="MR" onclick="calculadora.msacar()">
-                <input type="button"  value="M+" onclick="calculadora.mmas()">
-                <input type="button"  value="M-" onclick="calculadora.mmenos()">
-                <input type="button"  value="Sin" onclick="calculadora.sen()">
-                <input type="button"  value="Cos" onclick="calculadora.cos()">
-                <input type="button"  value="Tan" onclick="calculadora.tan()">
-                <input type="button"  value="C" onclick="calculadora.limpiar()">
- 
-                <input type="button"  value="Sec" onclick="calculadora.senh()">
-                <input type="button"  value="Csc" onclick="calculadora.cosh()">
-                <input type="button"  value="Cot" onclick="calculadora.tanh()">
-                <input type="button"  value="CE" onclick="calculadora.ce()">
 
-                <input type="button"  value="ln" onclick="calculadora.ln()">
-                <input type="button"  value="log" onclick="calculadora.log()">
-                <input type="button"  value="x^y" onclick="calculadora.pow()">
-                <input type="button"  value="sqrt" onclick="calculadora.sqrt()">
-  
-                <input type="button"  value="e" onclick="calculadora.e()">
-                <input type="button"  value="pi" onclick="calculadora.pi()">
-                <input type="button"  value="1/x" onclick="calculadora.multi()">
-                <input type="button"  value="|x|" onclick="calculadora.abs()">
-                <input type="button"  value="7" onclick="calculadora.addElement('7')">
-                <input type="button"  value="8" onclick="calculadora.addElement('8')">
-                <input type="button"  value="9" onclick="calculadora.addElement('9')">
-                <input type="button"  value="*" onclick="calculadora.multi()">
-                <input type="button"  value="4" onclick="calculadora.addElement('4')">
-                <input type="button"  value="5" onclick="calculadora.addElement('5')">
-                <input type="button"  value="6" onclick="calculadora.addElement('6')">
-                <input type="button"  value="-" onclick="calculadora.resta()">
-                <input type="button"  value="1" onclick="calculadora.addElement('1')">
-                <input type="button"  value="2" onclick="calculadora.addElement('2')">
-                <input type="button"  value="3" onclick="calculadora.addElement('3')">
-                <input type="button"  value="+" onclick="calculadora.suma()">
+        <p>
+            <input type="button" value="MC" onclick="calculadora.mlimpiar()">
+            <input type="button" value="MR" onclick="calculadora.msacar()">
+            <input type="button" value="M+" onclick="calculadora.mmas()">
+            <input type="button" value="M-" onclick="calculadora.mmenos()">
+            <input type="button" value="Sin" onclick="calculadora.sen()">
+            <input type="button" value="Cos" onclick="calculadora.cos()">
+            <input type="button" value="Tan" onclick="calculadora.tan()">
+            <input type="button" value="C" onclick="calculadora.limpiar()">
 
-                <input type="button"  value="," onclick="calculadora.addElement('.')">
-                <input type="button"  value="0" onclick="calculadora.addElement('0')">
-                <input type="button"  value="/" onclick="calculadora.div()">
-                <input type="button"  value="enter" onclick="calculadora.enter()">
-            </p>
-            </main>
+            <input type="button" value="Sec" onclick="calculadora.senh()">
+            <input type="button" value="Csc" onclick="calculadora.cosh()">
+            <input type="button" value="Cot" onclick="calculadora.tanh()">
+            <input type="button" value="CE" onclick="calculadora.ce()">
 
-      
+            <input type="button" value="ln" onclick="calculadora.ln()">
+            <input type="button" value="log" onclick="calculadora.log()">
+            <input type="button" value="x^y" onclick="calculadora.pow()">
+            <input type="button" value="sqrt" onclick="calculadora.sqrt()">
+
+            <input type="button" value="e" onclick="calculadora.e()">
+            <input type="button" value="pi" onclick="calculadora.pi()">
+            <input type="button" value="1/x" onclick="calculadora.multi()">
+            <input type="button" value="|x|" onclick="calculadora.abs()">
+            <input type="button" value="7" onclick="calculadora.addElement('7')">
+            <input type="button" value="8" onclick="calculadora.addElement('8')">
+            <input type="button" value="9" onclick="calculadora.addElement('9')">
+            <input type="button" value="*" onclick="calculadora.multi()">
+            <input type="button" value="4" onclick="calculadora.addElement('4')">
+            <input type="button" value="5" onclick="calculadora.addElement('5')">
+            <input type="button" value="6" onclick="calculadora.addElement('6')">
+            <input type="button" value="-" onclick="calculadora.resta()">
+            <input type="button" value="1" onclick="calculadora.addElement('1')">
+            <input type="button" value="2" onclick="calculadora.addElement('2')">
+            <input type="button" value="3" onclick="calculadora.addElement('3')">
+            <input type="button" value="+" onclick="calculadora.suma()">
+
+            <input type="button" value="," onclick="calculadora.addElement('.')">
+            <input type="button" value="0" onclick="calculadora.addElement('0')">
+            <input type="button" value="/" onclick="calculadora.div()">
+            <input type="button" value="enter" onclick="calculadora.enter()">
+        </p>
+    </main>
+    <footer>
+        <p>
+            Para hacer operaciones con la calculadora es necesario usar el Enter para meterlo en la pila.
+        </p>
+        <p>
+            Con la pila se Hacen las operaciones
+        </p>
+    </footer>
+
 </body>
 
 </html>

@@ -32,17 +32,31 @@
     </section>
     <main>
         
-                <form action="https://localhost/Ejercicio-06/Ejercicio6.php#" method="post" enctype="multipart/form-data">
-                    <p>
-                        <label for="arch"> Archivo a cargar desde la máquina cliente</label>
-                        <input id="arch" type="file" name="archivo">
-                    </p>
-                    <p>
-                        <input type="submit" name="cargarAccion" value="Enviar">
-                    </p>
-                </form>
+                <ul>
+                    <li>DNI: 15508167A</li>
+                    <li>Nombre: Daniel</li>
+                    <li>Apellido: Pascual Lopez</li>
+                    <li>Email: UO269728@uniovi.es</li>
+                    <li>Telefono: 690769855</li>
+                    <li>Edad: 21</li>
+                    <li>Genero: M</li>
+                    <li>Nivel: 10</li>
+                    <li>Tiempo: 15.00</li>
+                    <li>Tarea completada: S</li>
+                    <li>Comentarios: NO hay </li>
+                    <li>Proposiciones: NO hay</li>
+                    <li>Valoracion: 10</li>
+                </ul>
 
-                        <p>.</p>
+                
+                <h3>Buscar Usuario</h3>
+                <form action="https://localhost/Ejercicio-06/Ejercicio6.php#" method="post" name="buscarDato"> 
+                    <label for="busc"> DNI de la persona:</label>
+                    <input type="text" id="busc" name="dni">
+                    <input type="submit" name="buscarAccion" value="Buscar Usuario">
+                </form>
+ 
+                    <p>.</p>
     </main>
     <footer>
         Hecho por Daniel Pascual Lopez - UO269728
